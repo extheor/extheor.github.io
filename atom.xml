@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://change.xiaokang.me/"/>
-  <updated>2020-07-31T12:43:30.117Z</updated>
+  <updated>2020-08-04T06:18:15.146Z</updated>
   <id>https://change.xiaokang.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的第一篇博客文章</title>
+    <link href="https://change.xiaokang.me/posts/b24dd347/index.html"/>
+    <id>https://change.xiaokang.me/posts/b24dd347/index.html</id>
+    <published>2020-08-04T06:05:29.000Z</published>
+    <updated>2020-08-04T06:18:15.146Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="第一章"><a class="markdownIt-Anchor" href="#第一章"></a> 第一章</h2><p>内容</p><hr /><h2 id="第二章"><a class="markdownIt-Anchor" href="#第二章"></a> 第二章</h2><p>内容</p><hr /><h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2><p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>八月自考考前突击-20200729</title>
@@ -512,33 +534,6 @@
     
     
       <category term="自考" scheme="https://change.xiaokang.me/tags/%E8%87%AA%E8%80%83/"/>
-    
-      <category term="目录索引" scheme="https://change.xiaokang.me/tags/%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
-    
-      <category term="马克思主义" scheme="https://change.xiaokang.me/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>马克思主义背诵汇总表</title>
-    <link href="https://change.xiaokang.me/posts/79ef335/index.html"/>
-    <id>https://change.xiaokang.me/posts/79ef335/index.html</id>
-    <published>2020-02-24T12:04:04.000Z</published>
-    <updated>2020-07-31T12:43:30.033Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><table><thead><tr><th style="text-align:center">时间</th><th style="text-align:center">地址</th></tr></thead><tbody><tr><td style="text-align:center">2020-03-16</td><td style="text-align:center"><a href="/posts/5a5294c8/index.html">/posts/5a5294c8/index.html</a></td></tr><tr><td style="text-align:center">2020-03-15</td><td style="text-align:center"><a href="/posts/c35bc572/index.html">/posts/c35bc572/index.html</a></td></tr><tr><td style="text-align:center">2020-03-13</td><td style="text-align:center"><a href="/posts/2a386047/index.html">/posts/2a386047/index.html</a></td></tr><tr><td style="text-align:center">2020-03-12</td><td style="text-align:center"><a href="/posts/5d3f50d1/index.html">/posts/5d3f50d1/index.html</a></td></tr><tr><td style="text-align:center">2020-03-11</td><td style="text-align:center"><a href="/posts/c436016b/index.html">/posts/c436016b/index.html</a></td></tr><tr><td style="text-align:center">2020-03-10</td><td style="text-align:center"><a href="/posts/b33131fd/index.html">/posts/b33131fd/index.html</a></td></tr><tr><td style="text-align:center">2020-03-09</td><td style="text-align:center"><a href="/posts/d3f6b818/index.html">/posts/d3f6b818/index.html</a></td></tr><tr><td style="text-align:center">2020-03-07</td><td style="text-align:center"><a href="/posts/344e951f/index.html">/posts/344e951f/index.html</a></td></tr><tr><td style="text-align:center">2020-03-06</td><td style="text-align:center"><a href="/posts/4349a589/index.html">/posts/4349a589/index.html</a></td></tr><tr><td style="text-align:center">2020-03-05</td><td style="text-align:center"><a href="/posts/da40f433/index.html">/posts/da40f433/index.html</a></td></tr><tr><td style="text-align:center">2020-03-04</td><td style="text-align:center"><a href="/posts/ad47c4a5/index.html">/posts/ad47c4a5/index.html</a></td></tr><tr><td style="text-align:center">2020-03-03</td><td style="text-align:center"><a href="/posts/33235106/index.html">/posts/33235106/index.html</a></td></tr><tr><td style="text-align:center">2020-03-02</td><td style="text-align:center"><a href="/posts/44246190/index.html">/posts/44246190/index.html</a></td></tr><tr><td style="text-align:center">2020-02-28</td><td style="text-align:center"><a href="/posts/2e7b8d69/index.html">/posts/2e7b8d69/index.html</a></td></tr><tr><td style="text-align:center">2020-02-27</td><td style="text-align:center"><a href="/posts/bec490f8/index.html">/posts/bec490f8/index.html</a></td></tr><tr><td style="text-align:center">2020-02-26</td><td style="text-align:center"><a href="/posts/c9c3a06e/index.html">/posts/c9c3a06e/index.html</a></td></tr><tr><td style="text-align:center">2020-02-25</td><td style="text-align:center"><a href="/posts/50caf1d4/index.html">/posts/50caf1d4/index.html</a></td></tr><tr><td style="text-align:center">2020-02-24</td><td style="text-align:center"><a href="/posts/27cdc142/index.html">/posts/27cdc142/index.html</a></td></tr></tbody></table><p><a href='https://mubu.com/doc/uhtcWZG-o0' target="_blank" rel="noopener"><button style="color:red" class="button button-large button-plain button-borderless" style='color:red'><i class="fa fa-tag">幕布汇总</i></button></a></p>]]></content>
-    
-    <summary type="html">
-    
-      马克思主义背诵汇总表
-    
-    </summary>
-    
-    
-      <category term="自学考试" scheme="https://change.xiaokang.me/categories/%E8%87%AA%E5%AD%A6%E8%80%83%E8%AF%95/"/>
-    
-      <category term="马克思主义" scheme="https://change.xiaokang.me/categories/%E8%87%AA%E5%AD%A6%E8%80%83%E8%AF%95/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/"/>
-    
     
       <category term="目录索引" scheme="https://change.xiaokang.me/tags/%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
     
