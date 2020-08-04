@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小康的自考之路</title>
+  <title>码小余的自考之路</title>
   <icon>https://www.gravatar.com/avatar/d24719e3b7a66cbde951909bac991457</icon>
   <subtitle>每天进步一点点！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://change.xiaokang.me/"/>
-  <updated>2020-08-04T06:18:15.146Z</updated>
+  <updated>2020-08-04T07:17:21.577Z</updated>
   <id>https://change.xiaokang.me/</id>
   
   <author>
@@ -21,20 +21,44 @@
     <link href="https://change.xiaokang.me/posts/b24dd347/index.html"/>
     <id>https://change.xiaokang.me/posts/b24dd347/index.html</id>
     <published>2020-08-04T06:05:29.000Z</published>
-    <updated>2020-08-04T06:18:15.146Z</updated>
+    <updated>2020-08-04T07:17:21.577Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="第一章"><a class="markdownIt-Anchor" href="#第一章"></a> 第一章</h2><p>内容</p><hr /><h2 id="第二章"><a class="markdownIt-Anchor" href="#第二章"></a> 第二章</h2><p>内容</p><hr /><h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2><p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/
-      
+      我的第一篇博客文章
     
     </summary>
     
     
+      <category term="我的第一篇博客文章" scheme="https://change.xiaokang.me/categories/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    
+    
+      <category term="我的第一篇博客文章" scheme="https://change.xiaokang.me/tags/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo常用命令</title>
+    <link href="https://change.xiaokang.me/posts/b24dd347/index.html"/>
+    <id>https://change.xiaokang.me/posts/b24dd347/index.html</id>
+    <published>2020-08-04T06:05:29.000Z</published>
+    <updated>2020-08-04T07:20:25.792Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言:</h2><p>为了方便查阅,这里将常用指令汇总.</p><h2 id="简写指令"><a class="markdownIt-Anchor" href="#简写指令"></a> 简写指令:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的第一篇文章&quot;&#96;       等价于        &#96;hexo new &quot;我的第一篇文章&quot;&#96;  还等价于       &#96;hexo new post &quot;我的第一篇文章&quot;&#96;    </span><br><span class="line"> &#96;hexo p&#96; 等价于 &#96;hexo publish&#96;</span><br><span class="line"> &#96;hexo g&#96; 等价于 &#96;hexo generate&#96;  </span><br><span class="line"> &#96;hexo s&#96;等价于 &#96;hexo server&#96;     </span><br><span class="line"> &#96;hexo d&#96; 等价于 &#96;hexo deploy&#96;</span><br><span class="line"> &#96;hexo deploy -g&#96;  等价于 &#96;hexo deploy --generate&#96;</span><br><span class="line"> &#96;hexo generate -d&#96;等价于&#96;hexo generate --deploy</span><br></pre></td></tr></table></figure><p><strong>注: hexo  clean 没有 简写,  git --version 没有简写</strong></p><h2 id="指令说明"><a class="markdownIt-Anchor" href="#指令说明"></a> 指令说明:</h2><p><code>hexo server</code>        #Hexo 会监视文件变动并自动更新，除修改<strong>站点配置文件</strong>外,无须重启服务器,直接刷新网页即可生效。<br /><code>hexo server -s</code> #以静态模式启动<br /><code>hexo server -p 5000</code> #更改访问端口   (默认端口为4000，'ctrl + c’关闭server)<br /><code>hexo server -i IP地址</code> #自定义 IP<br /><code>hexo clean</code> #清除缓存  ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹<br /><code>hexo g</code> #生成静态网页  (执行 <code>$ hexo g</code>后会在站点根目录下生成public文件夹, hexo会将&quot;/blog/source/&quot;   下面的.md后缀的文件编译为.html后缀的文件,存放在&quot;/blog/public/ &quot;   路径下)<br /><code>hexo d</code> #将本地数据部署到远端服务器(如github)<br /><code>hexo init 文件夹名称</code> #初始化XX文件夹名称<br /><code>npm update hexo -g</code>#升级<br /><code>npm install hexo -g</code>#安装<br /><code>node-v</code>          #查看node.js版本号<br /><code>npm -v</code>        #查看npm版本号<br /><code>git --version</code>  #查看git版本号<br /><code>hexo -v</code>      #查看hexo版本号</p><p><code>hexo publish [layout]</code>   #通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹,如:<code>$ hexo publish [layout]</code>,草稿默认是不会显示在页面中的，可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code>来预览草稿。</p><p><code>hexo new aaa &quot;bbb&quot;</code>  # 新建一篇文章,<a href="http://xn--bbb-c88dp7omgy8jb3a013i6hf7k9cimc761m.md" target="_blank" rel="noopener">文章名称和标题分别为bbb.md</a> 和 bbb.   文章采用aaa布局,  此时会在站点根目录下的----&gt;source-----&gt;_post文件夹下生成bbb.md文件,  bbb.md文件的顶部(-----分割线上方区域,也称作Front matter区),生成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout : aaa&#96;</span><br><span class="line"> &#96;title:&#96;</span><br><span class="line"> &#96;date:</span><br></pre></td></tr></table></figure><p>链接：<a href="https://www.jianshu.com/p/7b8faf77d1af" target="_blank" rel="noopener">https://www.jianshu.com/p/7b8faf77d1af</a><br />来源：简书</p>]]></content>
+    
+    <summary type="html">
+    
+      Hexo常用命令
+    
+    </summary>
+    
+    
+      <category term="Hexo常用命令" scheme="https://change.xiaokang.me/categories/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    
+    
+      <category term="Hexo常用命令" scheme="https://change.xiaokang.me/tags/Hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     
   </entry>
   
@@ -509,35 +533,6 @@
       <category term="目录索引" scheme="https://change.xiaokang.me/tags/%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
     
       <category term="计算机网络原理" scheme="https://change.xiaokang.me/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>马克思主义笔记及试题汇总表</title>
-    <link href="https://change.xiaokang.me/posts/2e0c129d/index.html"/>
-    <id>https://change.xiaokang.me/posts/2e0c129d/index.html</id>
-    <published>2020-02-27T01:53:04.000Z</published>
-    <updated>2020-07-31T12:43:30.047Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="各章节笔记汇总"><a class="markdownIt-Anchor" href="#各章节笔记汇总"></a> 各章节笔记汇总</h2><table><thead><tr><th style="text-align:center">章节名称</th><th style="text-align:center">地址</th></tr></thead><tbody><tr><td style="text-align:center">考试常见知识点</td><td style="text-align:center"><a href="/posts/bf7bde0e/index.html">/posts/bf7bde0e/index.html</a></td></tr><tr><td style="text-align:center">第七章</td><td style="text-align:center"><a href="/posts/38a88481/index.html">/posts/38a88481/index.html</a></td></tr><tr><td style="text-align:center">第六章</td><td style="text-align:center"><a href="/posts/eaa8f31e/index.html">/posts/eaa8f31e/index.html</a></td></tr><tr><td style="text-align:center">第五章</td><td style="text-align:center"><a href="/posts/8fa6b8c7/index.html">/posts/8fa6b8c7/index.html</a></td></tr><tr><td style="text-align:center">第四章</td><td style="text-align:center"><a href="/posts/e0387d80/index.html">/posts/e0387d80/index.html</a></td></tr><tr><td style="text-align:center">第三章</td><td style="text-align:center"><a href="/posts/571564e5/index.html">/posts/571564e5/index.html</a></td></tr><tr><td style="text-align:center">第二章</td><td style="text-align:center"><a href="/posts/1a0bc7b7/index.html">/posts/1a0bc7b7/index.html</a></td></tr><tr><td style="text-align:center">第一章</td><td style="text-align:center"><a href="/posts/2a1d2b6f/index.html">/posts/2a1d2b6f/index.html</a></td></tr><tr><td style="text-align:center">绪论</td><td style="text-align:center"><a href="/posts/372df90a/index.html">/posts/372df90a/index.html</a></td></tr></tbody></table><h2 id="单元练习汇总"><a class="markdownIt-Anchor" href="#单元练习汇总"></a> 单元练习汇总</h2><table><thead><tr><th style="text-align:center">章节名称</th><th style="text-align:center">地址</th></tr></thead><tbody><tr><td style="text-align:center">第七章</td><td style="text-align:center">无练习</td></tr><tr><td style="text-align:center">第六章</td><td style="text-align:center"><a href="/posts/2b770baf/index.html">/posts/2b770baf/index.html</a></td></tr><tr><td style="text-align:center">第五章</td><td style="text-align:center"><a href="/posts/ef22c7c2/index.html">/posts/ef22c7c2/index.html</a></td></tr><tr><td style="text-align:center">第四章</td><td style="text-align:center"><a href="/posts/21c250b1/index.html">/posts/21c250b1/index.html</a></td></tr><tr><td style="text-align:center">第三章</td><td style="text-align:center"><a href="/posts/fd67c5cb/index.html">/posts/fd67c5cb/index.html</a></td></tr><tr><td style="text-align:center">第二章</td><td style="text-align:center"><a href="/posts/126b275/index.html">/posts/126b275/index.html</a></td></tr><tr><td style="text-align:center">第一章</td><td style="text-align:center"><a href="/posts/dae71d5f/index.html">/posts/dae71d5f/index.html</a></td></tr><tr><td style="text-align:center">绪论</td><td style="text-align:center"><a href="/posts/dae71d5f/index.html">/posts/dae71d5f/index.html</a></td></tr></tbody></table><h2 id="自考树整理"><a class="markdownIt-Anchor" href="#自考树整理"></a> 自考树整理</h2><table><thead><tr><th style="text-align:center">名称</th><th style="text-align:center">地址</th></tr></thead><tbody><tr><td style="text-align:center">马克思主义是关于无产阶级和人类解放的科学</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">物质世界及其发展规律</td><td style="text-align:center"><a href="/posts/1367417b/index.html">/posts/1367417b/index.html</a></td></tr><tr><td style="text-align:center">认识的本质及其规律</td><td style="text-align:center"><a href="/posts/1a998be6/index.html">/posts/1a998be6/index.html</a></td></tr><tr><td style="text-align:center">人类社会及其发展规律</td><td style="text-align:center"><a href="/posts/74d60fd9/index.html">/posts/74d60fd9/index.html</a></td></tr><tr><td style="text-align:center">资本主义制度的形成及其本质</td><td style="text-align:center"><a href="/posts/49249ac9/index.html">/posts/49249ac9/index.html</a></td></tr><tr><td style="text-align:center">资本主义的发展及其趋势</td><td style="text-align:center"><a href="/posts/3e4bb613/index.html">/posts/3e4bb613/index.html</a></td></tr><tr><td style="text-align:center">社会主义的发展及其规律</td><td style="text-align:center"><a href="/posts/a4f2a748/index.html">/posts/a4f2a748/index.html</a></td></tr><tr><td style="text-align:center">共产主义社会是人类最崇高的社会理想</td><td style="text-align:center"><a href="/posts/169e7dda/index.html">/posts/169e7dda/index.html</a></td></tr></tbody></table><p>由于将其他人整理的文档工作量无异于自己整理一遍。时间紧迫，此任务无法完成。</p><p>所以直接附上大家整理的文档。<a style='color: #FFF;' href="https://www.lanzous.com/i9zv11c" target="_blank" rel="noopener" class="button button-primary button-pill button-small">XX云下载</a> 密码请直接联系作者。</p><h2 id="仿真模拟练习汇总"><a class="markdownIt-Anchor" href="#仿真模拟练习汇总"></a> 仿真模拟练习汇总</h2><table><thead><tr><th style="text-align:center">练习名称</th><th style="text-align:center">地址</th></tr></thead><tbody><tr><td style="text-align:center">全真模拟训练（一）</td><td style="text-align:center"><a href="/posts/fc7bc02a/index.html">/posts/fc7bc02a/index.html</a></td></tr><tr><td style="text-align:center">全真模拟训练（二）</td><td style="text-align:center"><a href="/posts/cc6d2cf2/index.html">/posts/cc6d2cf2/index.html</a></td></tr><tr><td style="text-align:center">全真模拟训练（三）</td><td style="text-align:center"><a href="/posts/81738fa0/index.html">/posts/81738fa0/index.html</a></td></tr><tr><td style="text-align:center">全真模拟训练（四）</td><td style="text-align:center"><a href="/posts/365e96c5/index.html">/posts/365e96c5/index.html</a></td></tr><tr><td style="text-align:center">全真模拟训练（五）</td><td style="text-align:center"><a href="/posts/59c05382/index.html">/posts/59c05382/index.html</a></td></tr><tr><td style="text-align:center">考前密押(一)</td><td style="text-align:center"><a href="/posts/589a214a/index.html">/posts/589a214a/index.html</a></td></tr><tr><td style="text-align:center">考前密押(二)</td><td style="text-align:center"><a href="/posts/f7abba28/index.html">/posts/f7abba28/index.html</a></td></tr><tr><td style="text-align:center">考前密押(三)</td><td style="text-align:center"><a href="/posts/89589a03/index.html">/posts/89589a03/index.html</a></td></tr></tbody></table><h2 id="历年真题"><a class="markdownIt-Anchor" href="#历年真题"></a> 历年真题</h2><table><thead><tr><th style="text-align:center">年份</th><th style="text-align:center">链接</th></tr></thead><tbody><tr><td style="text-align:center">2012-04</td><td style="text-align:center"><a href="/posts/2895c4bb/index.html">/posts/2895c4bb/index.html</a></td></tr><tr><td style="text-align:center">2012-10</td><td style="text-align:center"><a href="/posts/36e331e3/index.html">/posts/36e331e3/index.html</a></td></tr><tr><td style="text-align:center">2013-04</td><td style="text-align:center"><a href="/posts/9029a3de/index.html">/posts/9029a3de/index.html</a></td></tr><tr><td style="text-align:center">2013-10</td><td style="text-align:center"><a href="/posts/8e5f5686/index.html">/posts/8e5f5686/index.html</a></td></tr><tr><td style="text-align:center">2014-04</td><td style="text-align:center"><a href="/posts/dfe9b67/index.html">/posts/dfe9b67/index.html</a></td></tr><tr><td style="text-align:center">2014-10</td><td style="text-align:center"><a href="/posts/13886e3f/index.html">/posts/13886e3f/index.html</a></td></tr><tr><td style="text-align:center">2015-04</td><td style="text-align:center"><a href="/posts/b542fc02/index.html">/posts/b542fc02/index.html</a></td></tr><tr><td style="text-align:center">2015-10</td><td style="text-align:center"><a href="/posts/ab34095a/index.html">/posts/ab34095a/index.html</a></td></tr><tr><td style="text-align:center">2016-04</td><td style="text-align:center"><a href="/posts/a7f753ec/index.html">/posts/a7f753ec/index.html</a></td></tr><tr><td style="text-align:center">2016-10</td><td style="text-align:center"><a href="/posts/b981a6b4/index.html">/posts/b981a6b4/index.html</a></td></tr><tr><td style="text-align:center">2017-04</td><td style="text-align:center"><a href="/posts/e489223c/index.html">/posts/e489223c/index.html</a></td></tr><tr><td style="text-align:center">2017-10</td><td style="text-align:center"><a href="/posts/faffd764/index.html">/posts/faffd764/index.html</a></td></tr><tr><td style="text-align:center">2018-04</td><td style="text-align:center"><a href="/posts/bcea326a/index.html">/posts/bcea326a/index.html</a></td></tr><tr><td style="text-align:center">2018-10</td><td style="text-align:center"><a href="/posts/a29cc732/index.html">/posts/a29cc732/index.html</a></td></tr><tr><td style="text-align:center">2019-04</td><td style="text-align:center"><a href="/posts/456550f/index.html">/posts/456550f/index.html</a></td></tr><tr><td style="text-align:center">2019-10</td><td style="text-align:center"><a href="/posts/1a20a057/index.html">/posts/1a20a057/index.html</a></td></tr></tbody></table><h2 id="其他链接"><a class="markdownIt-Anchor" href="#其他链接"></a> 其他链接</h2><p><a style='color: #FFF;' href="/posts/79ef335/index.html" class="button button-highlight button-pill button-large">马克思主义高频考点背诵</a></p>]]></content>
-    
-    <summary type="html">
-    
-      马克思主义笔记及试题汇总表
-    
-    </summary>
-    
-    
-      <category term="自学考试" scheme="https://change.xiaokang.me/categories/%E8%87%AA%E5%AD%A6%E8%80%83%E8%AF%95/"/>
-    
-      <category term="马克思主义" scheme="https://change.xiaokang.me/categories/%E8%87%AA%E5%AD%A6%E8%80%83%E8%AF%95/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/"/>
-    
-    
-      <category term="自考" scheme="https://change.xiaokang.me/tags/%E8%87%AA%E8%80%83/"/>
-    
-      <category term="目录索引" scheme="https://change.xiaokang.me/tags/%E7%9B%AE%E5%BD%95%E7%B4%A2%E5%BC%95/"/>
-    
-      <category term="马克思主义" scheme="https://change.xiaokang.me/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/"/>
     
   </entry>
   

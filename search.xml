@@ -11,6 +11,43 @@
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="第一章"><a class="markdownIt-Anchor" href="#第一章"></a> 第一章</h2><p>内容</p><hr /><h2 id="第二章"><a class="markdownIt-Anchor" href="#第二章"></a> 第二章</h2><p>内容</p><hr /><h2 id="参考文献"><a class="markdownIt-Anchor" href="#参考文献"></a> 参考文献</h2><p><a href="http://www.codesheep.cn" target="_blank" rel="noopener">www.codesheep.cn</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 我的第一篇博客文章 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的第一篇博客文章 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo常用命令</title>
+      <link href="/posts/b24dd347/index.html"/>
+      <url>/posts/b24dd347/index.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言:</h2><p>为了方便查阅,这里将常用指令汇总.</p><h2 id="简写指令"><a class="markdownIt-Anchor" href="#简写指令"></a> 简写指令:</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的第一篇文章&quot;&#96;       等价于        &#96;hexo new &quot;我的第一篇文章&quot;&#96;  还等价于       &#96;hexo new post &quot;我的第一篇文章&quot;&#96;    </span><br><span class="line"> &#96;hexo p&#96; 等价于 &#96;hexo publish&#96;</span><br><span class="line"> &#96;hexo g&#96; 等价于 &#96;hexo generate&#96;  </span><br><span class="line"> &#96;hexo s&#96;等价于 &#96;hexo server&#96;     </span><br><span class="line"> &#96;hexo d&#96; 等价于 &#96;hexo deploy&#96;</span><br><span class="line"> &#96;hexo deploy -g&#96;  等价于 &#96;hexo deploy --generate&#96;</span><br><span class="line"> &#96;hexo generate -d&#96;等价于&#96;hexo generate --deploy</span><br></pre></td></tr></table></figure><p><strong>注: hexo  clean 没有 简写,  git --version 没有简写</strong></p><h2 id="指令说明"><a class="markdownIt-Anchor" href="#指令说明"></a> 指令说明:</h2><p><code>hexo server</code>        #Hexo 会监视文件变动并自动更新，除修改<strong>站点配置文件</strong>外,无须重启服务器,直接刷新网页即可生效。<br /><code>hexo server -s</code> #以静态模式启动<br /><code>hexo server -p 5000</code> #更改访问端口   (默认端口为4000，'ctrl + c’关闭server)<br /><code>hexo server -i IP地址</code> #自定义 IP<br /><code>hexo clean</code> #清除缓存  ,网页正常情况下可以忽略此条命令,执行该指令后,会删掉站点根目录下的public文件夹<br /><code>hexo g</code> #生成静态网页  (执行 <code>$ hexo g</code>后会在站点根目录下生成public文件夹, hexo会将&quot;/blog/source/&quot;   下面的.md后缀的文件编译为.html后缀的文件,存放在&quot;/blog/public/ &quot;   路径下)<br /><code>hexo d</code> #将本地数据部署到远端服务器(如github)<br /><code>hexo init 文件夹名称</code> #初始化XX文件夹名称<br /><code>npm update hexo -g</code>#升级<br /><code>npm install hexo -g</code>#安装<br /><code>node-v</code>          #查看node.js版本号<br /><code>npm -v</code>        #查看npm版本号<br /><code>git --version</code>  #查看git版本号<br /><code>hexo -v</code>      #查看hexo版本号</p><p><code>hexo publish [layout]</code>   #通过 <code>publish</code> 命令将草稿移动到 <code>source/_posts</code> 文件夹,如:<code>$ hexo publish [layout]</code>,草稿默认是不会显示在页面中的，可在执行时加上 <code>--draft</code> 参数，或是把 <code>render_drafts</code> 参数设为 <code>true</code>来预览草稿。</p><p><code>hexo new aaa &quot;bbb&quot;</code>  # 新建一篇文章,<a href="http://xn--bbb-c88dp7omgy8jb3a013i6hf7k9cimc761m.md" target="_blank" rel="noopener">文章名称和标题分别为bbb.md</a> 和 bbb.   文章采用aaa布局,  此时会在站点根目录下的----&gt;source-----&gt;_post文件夹下生成bbb.md文件,  bbb.md文件的顶部(-----分割线上方区域,也称作Front matter区),生成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">layout : aaa&#96;</span><br><span class="line"> &#96;title:&#96;</span><br><span class="line"> &#96;date:</span><br></pre></td></tr></table></figure><p>链接：<a href="https://www.jianshu.com/p/7b8faf77d1af" target="_blank" rel="noopener">https://www.jianshu.com/p/7b8faf77d1af</a><br />来源：简书</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo常用命令 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo常用命令 </tag>
+            
+        </tags>
       
     </entry>
     
