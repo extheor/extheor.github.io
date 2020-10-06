@@ -5,9 +5,9 @@
   <subtitle>每天进步一点点！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://extheor.github.io/"/>
+  <link href="http://extheor.github.io/"/>
   <updated>2020-10-05T16:26:34.614Z</updated>
-  <id>https://extheor.github.io/</id>
+  <id>http://extheor.github.io/</id>
   
   <author>
     <name>Continue.Run</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>浊音半浊音</title>
-    <link href="https://extheor.github.io/posts/3914bfed/index.html"/>
-    <id>https://extheor.github.io/posts/3914bfed/index.html</id>
+    <link href="http://extheor.github.io/posts/3914bfed/index.html"/>
+    <id>http://extheor.github.io/posts/3914bfed/index.html</id>
     <published>2020-10-05T16:21:45.000Z</published>
     <updated>2020-10-05T16:26:34.614Z</updated>
     
@@ -35,17 +35,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>五十音图わ行，复习</title>
-    <link href="https://extheor.github.io/posts/9f97db8f/index.html"/>
-    <id>https://extheor.github.io/posts/9f97db8f/index.html</id>
+    <link href="http://extheor.github.io/posts/9f97db8f/index.html"/>
+    <id>http://extheor.github.io/posts/9f97db8f/index.html</id>
     <published>2020-10-05T16:21:20.000Z</published>
     <updated>2020-10-05T16:26:34.611Z</updated>
     
@@ -61,17 +61,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>五十音图やら行</title>
-    <link href="https://extheor.github.io/posts/6bbf03f0/index.html"/>
-    <id>https://extheor.github.io/posts/6bbf03f0/index.html</id>
+    <link href="http://extheor.github.io/posts/6bbf03f0/index.html"/>
+    <id>http://extheor.github.io/posts/6bbf03f0/index.html</id>
     <published>2020-10-02T14:39:25.000Z</published>
     <updated>2020-10-02T14:41:36.109Z</updated>
     
@@ -87,17 +87,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>Promise的使用方法</title>
-    <link href="https://extheor.github.io/posts/9eadcdf6/index.html"/>
-    <id>https://extheor.github.io/posts/9eadcdf6/index.html</id>
+    <link href="http://extheor.github.io/posts/9eadcdf6/index.html"/>
+    <id>http://extheor.github.io/posts/9eadcdf6/index.html</id>
     <published>2020-09-30T15:35:40.000Z</published>
     <updated>2020-09-30T15:37:26.235Z</updated>
     
@@ -113,17 +113,17 @@
     </summary>
     
     
-      <category term="promise" scheme="https://extheor.github.io/categories/promise/"/>
+      <category term="promise" scheme="http://extheor.github.io/categories/promise/"/>
     
     
-      <category term="promise" scheme="https://extheor.github.io/tags/promise/"/>
+      <category term="promise" scheme="http://extheor.github.io/tags/promise/"/>
     
   </entry>
   
   <entry>
     <title>Nodejs博客开发笔记（持续更新）</title>
-    <link href="https://extheor.github.io/posts/5b8c69d5/index.html"/>
-    <id>https://extheor.github.io/posts/5b8c69d5/index.html</id>
+    <link href="http://extheor.github.io/posts/5b8c69d5/index.html"/>
+    <id>http://extheor.github.io/posts/5b8c69d5/index.html</id>
     <published>2020-09-30T15:32:35.000Z</published>
     <updated>2020-09-30T15:37:26.234Z</updated>
     
@@ -139,17 +139,17 @@
     </summary>
     
     
-      <category term="Nodejs博客系统" scheme="https://extheor.github.io/categories/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
+      <category term="Nodejs博客系统" scheme="http://extheor.github.io/categories/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
     
     
-      <category term="Nodejs博客系统" scheme="https://extheor.github.io/tags/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
+      <category term="Nodejs博客系统" scheme="http://extheor.github.io/tags/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
   <entry>
     <title>五十音图はま行</title>
-    <link href="https://extheor.github.io/posts/2d6d3bd/index.html"/>
-    <id>https://extheor.github.io/posts/2d6d3bd/index.html</id>
+    <link href="http://extheor.github.io/posts/2d6d3bd/index.html"/>
+    <id>http://extheor.github.io/posts/2d6d3bd/index.html</id>
     <published>2020-09-30T15:30:45.000Z</published>
     <updated>2020-09-30T15:37:26.231Z</updated>
     
@@ -165,17 +165,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>五十音图たな行</title>
-    <link href="https://extheor.github.io/posts/75ceb627/index.html"/>
-    <id>https://extheor.github.io/posts/75ceb627/index.html</id>
+    <link href="http://extheor.github.io/posts/75ceb627/index.html"/>
+    <id>http://extheor.github.io/posts/75ceb627/index.html</id>
     <published>2020-09-27T16:45:32.000Z</published>
     <updated>2020-09-27T16:48:20.251Z</updated>
     
@@ -191,17 +191,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>五十音图かき行</title>
-    <link href="https://extheor.github.io/posts/dbba997d/index.html"/>
-    <id>https://extheor.github.io/posts/dbba997d/index.html</id>
+    <link href="http://extheor.github.io/posts/dbba997d/index.html"/>
+    <id>http://extheor.github.io/posts/dbba997d/index.html</id>
     <published>2020-09-26T17:13:36.000Z</published>
     <updated>2020-09-26T17:14:44.466Z</updated>
     
@@ -217,17 +217,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>五十音图あ行</title>
-    <link href="https://extheor.github.io/posts/ab176793/index.html"/>
-    <id>https://extheor.github.io/posts/ab176793/index.html</id>
+    <link href="http://extheor.github.io/posts/ab176793/index.html"/>
+    <id>http://extheor.github.io/posts/ab176793/index.html</id>
     <published>2020-09-25T14:50:23.000Z</published>
     <updated>2020-09-26T16:12:19.997Z</updated>
     
@@ -243,17 +243,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>了解日本与日语的初步认识</title>
-    <link href="https://extheor.github.io/posts/7bbd3149/index.html"/>
-    <id>https://extheor.github.io/posts/7bbd3149/index.html</id>
+    <link href="http://extheor.github.io/posts/7bbd3149/index.html"/>
+    <id>http://extheor.github.io/posts/7bbd3149/index.html</id>
     <published>2020-09-25T14:43:45.000Z</published>
     <updated>2020-09-25T14:44:35.007Z</updated>
     
@@ -269,17 +269,17 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/categories/%E6%97%A5%E8%AF%AD/"/>
     
     
-      <category term="日语" scheme="https://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
+      <category term="日语" scheme="http://extheor.github.io/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>标签外挂</title>
-    <link href="https://extheor.github.io/posts/54667693/index.html"/>
-    <id>https://extheor.github.io/posts/54667693/index.html</id>
+    <link href="http://extheor.github.io/posts/54667693/index.html"/>
+    <id>http://extheor.github.io/posts/54667693/index.html</id>
     <published>2020-09-18T15:24:25.000Z</published>
     <updated>2020-09-18T15:41:56.029Z</updated>
     
@@ -292,21 +292,21 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://extheor.github.io/categories/Hexo/"/>
+      <category term="Hexo" scheme="http://extheor.github.io/categories/Hexo/"/>
     
-      <category term="标签外挂" scheme="https://extheor.github.io/categories/Hexo/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
+      <category term="标签外挂" scheme="http://extheor.github.io/categories/Hexo/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
     
     
-      <category term="Hexo" scheme="https://extheor.github.io/tags/Hexo/"/>
+      <category term="Hexo" scheme="http://extheor.github.io/tags/Hexo/"/>
     
-      <category term="标签外挂" scheme="https://extheor.github.io/tags/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
+      <category term="标签外挂" scheme="http://extheor.github.io/tags/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
     
   </entry>
   
   <entry>
     <title>京东抽奖项目开发笔记</title>
-    <link href="https://extheor.github.io/posts/21abcf1a/index.html"/>
-    <id>https://extheor.github.io/posts/21abcf1a/index.html</id>
+    <link href="http://extheor.github.io/posts/21abcf1a/index.html"/>
+    <id>http://extheor.github.io/posts/21abcf1a/index.html</id>
     <published>2020-09-17T15:45:25.000Z</published>
     <updated>2020-09-17T23:57:30.525Z</updated>
     
@@ -319,40 +319,17 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>NodeJs 取参的四种方法</title>
-    <link href="https://extheor.github.io/posts/7380b71/index.html"/>
-    <id>https://extheor.github.io/posts/7380b71/index.html</id>
-    <published>2020-09-07T03:35:41.000Z</published>
-    <updated>2020-09-13T06:37:36.949Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="nodejs-取参的四种方法"><a class="markdownIt-Anchor" href="#nodejs-取参的四种方法"></a> NodeJs 取参的四种方法</h1><p>参考：<a href="https://my.oschina.net/u/2519530/blog/535309" target="_blank" rel="noopener">https://my.oschina.net/u/2519530/blog/535309</a> 🙏</p><p>获取请求很中的参数是每个web后台处理的必经之路，nodejs的 <strong>express框架</strong> 提供了四种方法来实现。</p><ol><li><a href="#req.body">req.body</a></li><li><a href="#req.query">req.query</a></li><li><a href="#req.params">req.params</a></li><li><a href="#req.param()">req.param()</a></li></ol><p><a id="req.body"><strong>首先介绍第一个req.body</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">Contains key-value pairs of data submitted in the request body. By default, it is undefined,</span><br><span class="line"> and is populated when you use body-parsing middleware such as body-parser and multer.</span><br><span class="line"></span><br><span class="line">稍微翻译一下：包含了提交数据的键值对在请求的body中，默认是underfined,</span><br><span class="line">你可以用body-parser或者multer来解析body</span><br></pre></td></tr></table></figure><p>解析body不是nodejs默认提供的，你需要载入body-parser中间件才可以使用req.body</p><blockquote><p><font color="red"><strong>此方法通常用来解析POST请求中的数据</strong></font></p></blockquote><p><a id="req.query"><strong>第二种是req.query</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">An object containing a property for each query string parameter in the route. </span><br><span class="line">If there is no query string, it is the empty object, &#123;&#125;.</span><br><span class="line">翻译一下:包含在路由中每个查询字符串参数属性的对象。如果没有，默认为&#123;&#125;</span><br></pre></td></tr></table></figure><p>有nodejs默认提供，无需载入中间件</p><p>举例说明(官方摘抄)：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;search?q&#x3D;tobi+ferret</span><br><span class="line">req.query.q</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tobi ferret&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; GET &#x2F;shoes?order&#x3D;desc&amp;shoe[color]&#x3D;blue&amp;shoe[type]&#x3D;converse</span><br><span class="line">req.query.order</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;desc&quot;</span><br><span class="line">req.query.shoe.color</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;blue&quot;</span><br><span class="line">req.query.shoe.type</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;converse&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>此方法多适用于GET请求，解析GET里的参数</strong></font></p></blockquote><p><a id="req.params"><strong>第三种是 req.params</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">官方文档：</span><br><span class="line">An object containing properties mapped to the named route “parameters”. </span><br><span class="line">For example, if you have the route &#x2F;user&#x2F;:name, </span><br><span class="line">then the “name” property is available as req.params.name. This object defaults to &#123;&#125;.</span><br><span class="line"></span><br><span class="line">翻译：包含映射到指定的路线“参数”属性的对象。</span><br><span class="line">例如，如果你有route&#x2F;user&#x2F;：name，那么“name”属性可作为req.params.name。</span><br><span class="line">该对象默认为&#123;&#125;。</span><br></pre></td></tr></table></figure><p>nodejs默认提供，无需载入其他中间件</p><p>举例说明</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;user&#x2F;tj</span><br><span class="line">req.params.name</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tj&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>多适用于restful风格url中的参数的解析</strong></font></p></blockquote><p>req.query与req.params的区别</p><blockquote><p>req.params包含路由参数（在URL的路径部分），而req.query包含URL的查询参数（在URL的？后的参数）。</p></blockquote><p><a id="req.param()"><strong>最后一种req.param()</strong></a></p><p>此方法被弃用，请看<a href="http://www.expressjs.com.cn/4x/api.html#req.param" target="_blank" rel="noopener">官方解释</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Deprecated. Use either req.params, req.body or req.query, as applicable.</span><br><span class="line">翻译：被弃用，用其他三种方式替换</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      NodeJs 取参的四种方法
-    
-    </summary>
-    
-    
-      <category term="Nodejs" scheme="https://extheor.github.io/categories/Nodejs/"/>
-    
-    
-      <category term="nodejs" scheme="https://extheor.github.io/tags/nodejs/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>MongoDB基本用法</title>
-    <link href="https://extheor.github.io/posts/236bfea3/index.html"/>
-    <id>https://extheor.github.io/posts/236bfea3/index.html</id>
+    <link href="http://extheor.github.io/posts/236bfea3/index.html"/>
+    <id>http://extheor.github.io/posts/236bfea3/index.html</id>
     <published>2020-09-07T03:35:41.000Z</published>
     <updated>2020-09-13T06:37:36.963Z</updated>
     
@@ -365,17 +342,40 @@
     </summary>
     
     
-      <category term="MongoDB" scheme="https://extheor.github.io/categories/MongoDB/"/>
+      <category term="MongoDB" scheme="http://extheor.github.io/categories/MongoDB/"/>
     
     
-      <category term="mongodb" scheme="https://extheor.github.io/tags/mongodb/"/>
+      <category term="mongodb" scheme="http://extheor.github.io/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJs 取参的四种方法</title>
+    <link href="http://extheor.github.io/posts/7380b71/index.html"/>
+    <id>http://extheor.github.io/posts/7380b71/index.html</id>
+    <published>2020-09-07T03:35:41.000Z</published>
+    <updated>2020-09-13T06:37:36.949Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="nodejs-取参的四种方法"><a class="markdownIt-Anchor" href="#nodejs-取参的四种方法"></a> NodeJs 取参的四种方法</h1><p>参考：<a href="https://my.oschina.net/u/2519530/blog/535309" target="_blank" rel="noopener">https://my.oschina.net/u/2519530/blog/535309</a> 🙏</p><p>获取请求很中的参数是每个web后台处理的必经之路，nodejs的 <strong>express框架</strong> 提供了四种方法来实现。</p><ol><li><a href="#req.body">req.body</a></li><li><a href="#req.query">req.query</a></li><li><a href="#req.params">req.params</a></li><li><a href="#req.param()">req.param()</a></li></ol><p><a id="req.body"><strong>首先介绍第一个req.body</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">Contains key-value pairs of data submitted in the request body. By default, it is undefined,</span><br><span class="line"> and is populated when you use body-parsing middleware such as body-parser and multer.</span><br><span class="line"></span><br><span class="line">稍微翻译一下：包含了提交数据的键值对在请求的body中，默认是underfined,</span><br><span class="line">你可以用body-parser或者multer来解析body</span><br></pre></td></tr></table></figure><p>解析body不是nodejs默认提供的，你需要载入body-parser中间件才可以使用req.body</p><blockquote><p><font color="red"><strong>此方法通常用来解析POST请求中的数据</strong></font></p></blockquote><p><a id="req.query"><strong>第二种是req.query</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">An object containing a property for each query string parameter in the route. </span><br><span class="line">If there is no query string, it is the empty object, &#123;&#125;.</span><br><span class="line">翻译一下:包含在路由中每个查询字符串参数属性的对象。如果没有，默认为&#123;&#125;</span><br></pre></td></tr></table></figure><p>有nodejs默认提供，无需载入中间件</p><p>举例说明(官方摘抄)：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;search?q&#x3D;tobi+ferret</span><br><span class="line">req.query.q</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tobi ferret&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; GET &#x2F;shoes?order&#x3D;desc&amp;shoe[color]&#x3D;blue&amp;shoe[type]&#x3D;converse</span><br><span class="line">req.query.order</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;desc&quot;</span><br><span class="line">req.query.shoe.color</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;blue&quot;</span><br><span class="line">req.query.shoe.type</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;converse&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>此方法多适用于GET请求，解析GET里的参数</strong></font></p></blockquote><p><a id="req.params"><strong>第三种是 req.params</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">官方文档：</span><br><span class="line">An object containing properties mapped to the named route “parameters”. </span><br><span class="line">For example, if you have the route &#x2F;user&#x2F;:name, </span><br><span class="line">then the “name” property is available as req.params.name. This object defaults to &#123;&#125;.</span><br><span class="line"></span><br><span class="line">翻译：包含映射到指定的路线“参数”属性的对象。</span><br><span class="line">例如，如果你有route&#x2F;user&#x2F;：name，那么“name”属性可作为req.params.name。</span><br><span class="line">该对象默认为&#123;&#125;。</span><br></pre></td></tr></table></figure><p>nodejs默认提供，无需载入其他中间件</p><p>举例说明</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;user&#x2F;tj</span><br><span class="line">req.params.name</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tj&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>多适用于restful风格url中的参数的解析</strong></font></p></blockquote><p>req.query与req.params的区别</p><blockquote><p>req.params包含路由参数（在URL的路径部分），而req.query包含URL的查询参数（在URL的？后的参数）。</p></blockquote><p><a id="req.param()"><strong>最后一种req.param()</strong></a></p><p>此方法被弃用，请看<a href="http://www.expressjs.com.cn/4x/api.html#req.param" target="_blank" rel="noopener">官方解释</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Deprecated. Use either req.params, req.body or req.query, as applicable.</span><br><span class="line">翻译：被弃用，用其他三种方式替换</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      NodeJs 取参的四种方法
+    
+    </summary>
+    
+    
+      <category term="Nodejs" scheme="http://extheor.github.io/categories/Nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="http://extheor.github.io/tags/nodejs/"/>
     
   </entry>
   
   <entry>
     <title>京东投票项目开发笔记</title>
-    <link href="https://extheor.github.io/posts/5508212c/index.html"/>
-    <id>https://extheor.github.io/posts/5508212c/index.html</id>
+    <link href="http://extheor.github.io/posts/5508212c/index.html"/>
+    <id>http://extheor.github.io/posts/5508212c/index.html</id>
     <published>2020-09-07T03:35:41.000Z</published>
     <updated>2020-09-13T06:37:36.966Z</updated>
     
@@ -388,17 +388,17 @@
     </summary>
     
     
-      <category term="MongoDB" scheme="https://extheor.github.io/categories/MongoDB/"/>
+      <category term="MongoDB" scheme="http://extheor.github.io/categories/MongoDB/"/>
     
     
-      <category term="mongodb" scheme="https://extheor.github.io/tags/mongodb/"/>
+      <category term="mongodb" scheme="http://extheor.github.io/tags/mongodb/"/>
     
   </entry>
   
   <entry>
     <title>京东抽奖案例</title>
-    <link href="https://extheor.github.io/posts/37c547df/index.html"/>
-    <id>https://extheor.github.io/posts/37c547df/index.html</id>
+    <link href="http://extheor.github.io/posts/37c547df/index.html"/>
+    <id>http://extheor.github.io/posts/37c547df/index.html</id>
     <published>2020-09-06T03:35:41.000Z</published>
     <updated>2020-09-13T06:37:36.968Z</updated>
     
@@ -411,17 +411,17 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>axios中文文档</title>
-    <link href="https://extheor.github.io/posts/dc94f8a1/index.html"/>
-    <id>https://extheor.github.io/posts/dc94f8a1/index.html</id>
+    <link href="http://extheor.github.io/posts/dc94f8a1/index.html"/>
+    <id>http://extheor.github.io/posts/dc94f8a1/index.html</id>
     <published>2020-09-06T02:31:41.000Z</published>
     <updated>2020-09-13T06:37:36.956Z</updated>
     
@@ -434,17 +434,17 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>axios的请求合并以及参数配置</title>
-    <link href="https://extheor.github.io/posts/12d95a5e/index.html"/>
-    <id>https://extheor.github.io/posts/12d95a5e/index.html</id>
+    <link href="http://extheor.github.io/posts/12d95a5e/index.html"/>
+    <id>http://extheor.github.io/posts/12d95a5e/index.html</id>
     <published>2020-09-05T12:50:41.000Z</published>
     <updated>2020-09-13T06:37:36.965Z</updated>
     
@@ -457,17 +457,17 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>axios的基础语法</title>
-    <link href="https://extheor.github.io/posts/4e6d4eb4/index.html"/>
-    <id>https://extheor.github.io/posts/4e6d4eb4/index.html</id>
+    <link href="http://extheor.github.io/posts/4e6d4eb4/index.html"/>
+    <id>http://extheor.github.io/posts/4e6d4eb4/index.html</id>
     <published>2020-09-05T01:45:25.000Z</published>
     <updated>2020-09-13T06:37:36.962Z</updated>
     
@@ -480,17 +480,17 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
   <entry>
     <title>JSONP</title>
-    <link href="https://extheor.github.io/posts/738eee3b/index.html"/>
-    <id>https://extheor.github.io/posts/738eee3b/index.html</id>
+    <link href="http://extheor.github.io/posts/738eee3b/index.html"/>
+    <id>http://extheor.github.io/posts/738eee3b/index.html</id>
     <published>2020-09-05T01:40:25.000Z</published>
     <updated>2020-09-13T06:37:36.955Z</updated>
     
@@ -503,10 +503,10 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.github.io/categories/Ajax/"/>
+      <category term="Ajax" scheme="http://extheor.github.io/categories/Ajax/"/>
     
     
-      <category term="ajax" scheme="https://extheor.github.io/tags/ajax/"/>
+      <category term="ajax" scheme="http://extheor.github.io/tags/ajax/"/>
     
   </entry>
   
