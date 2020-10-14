@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://extheor.club/"/>
-  <updated>2020-10-14T10:19:10.335Z</updated>
+  <updated>2020-10-07T14:29:14.530Z</updated>
   <id>https://extheor.club/</id>
   
   <author>
@@ -15,28 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo使用/Hexo sw文件</title>
-    <link href="https://extheor.club/posts/c5e9d369/index.html"/>
-    <id>https://extheor.club/posts/c5e9d369/index.html</id>
-    <published>2020-10-14T10:15:49.078Z</published>
-    <updated>2020-10-14T10:19:10.335Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
   
   <entry>
     <title>拗音</title>
@@ -57,10 +35,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -83,10 +57,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -109,10 +79,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -135,10 +101,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -161,10 +123,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -187,10 +145,6 @@
     </summary>
     
     
-      <category term="promise" scheme="https://extheor.club/categories/promise/"/>
-    
-    
-      <category term="promise" scheme="https://extheor.club/tags/promise/"/>
     
   </entry>
   
@@ -213,10 +167,6 @@
     </summary>
     
     
-      <category term="Nodejs博客系统" scheme="https://extheor.club/categories/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-      <category term="Nodejs博客系统" scheme="https://extheor.club/tags/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -239,10 +189,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -265,10 +211,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -291,10 +233,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -317,10 +255,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -343,10 +277,6 @@
     </summary>
     
     
-      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
-    
-    
-      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -366,14 +296,6 @@
     </summary>
     
     
-      <category term="Hexo" scheme="https://extheor.club/categories/Hexo/"/>
-    
-      <category term="标签外挂" scheme="https://extheor.club/categories/Hexo/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
-    
-    
-      <category term="Hexo" scheme="https://extheor.club/tags/Hexo/"/>
-    
-      <category term="标签外挂" scheme="https://extheor.club/tags/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
     
   </entry>
   
@@ -393,10 +315,6 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
-    
-    
-      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
@@ -416,10 +334,6 @@
     </summary>
     
     
-      <category term="Nodejs" scheme="https://extheor.club/categories/Nodejs/"/>
-    
-    
-      <category term="nodejs" scheme="https://extheor.club/tags/nodejs/"/>
     
   </entry>
   
@@ -439,10 +353,6 @@
     </summary>
     
     
-      <category term="MongoDB" scheme="https://extheor.club/categories/MongoDB/"/>
-    
-    
-      <category term="mongodb" scheme="https://extheor.club/tags/mongodb/"/>
     
   </entry>
   
@@ -462,10 +372,6 @@
     </summary>
     
     
-      <category term="MongoDB" scheme="https://extheor.club/categories/MongoDB/"/>
-    
-    
-      <category term="mongodb" scheme="https://extheor.club/tags/mongodb/"/>
     
   </entry>
   
@@ -485,10 +391,6 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
-    
-    
-      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
@@ -508,10 +410,25 @@
     </summary>
     
     
-      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>axios的请求合并以及参数配置</title>
+    <link href="https://extheor.club/posts/12d95a5e/index.html"/>
+    <id>https://extheor.club/posts/12d95a5e/index.html</id>
+    <published>2020-09-05T12:50:41.000Z</published>
+    <updated>2020-09-13T06:37:36.965Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="axios的请求合并以及参数配置"><a class="markdownIt-Anchor" href="#axios的请求合并以及参数配置"></a> axios的请求合并以及参数配置</h1><p>现在我们假设想要两个请求都完成后才做一些事情，应该怎么办呢？</p><p>我们会想到，可以在第二个请求完成后，一起返回第一个请求结果和第二个请求结果，并且他们是按照代码顺序输出结果的。</p><p>代码演示为：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="literal">null</span>;</span><br><span class="line">axios</span><br><span class="line">    .get(</span><br><span class="line">    <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/info"</span></span><br><span class="line">)</span><br><span class="line">    .then(<span class="function">(<span class="params">resuleA</span>) =&gt;</span> &#123;</span><br><span class="line">    result = resuleA;</span><br><span class="line">    <span class="comment">// console.log(resuleA);</span></span><br><span class="line">    <span class="keyword">return</span> axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/list"</span></span><br><span class="line">    );</span><br><span class="line">&#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">resultB</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(resultB);</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><blockquote><p>我们可以看到，我在第二个then里面利用全局变量 result 返回了第一个then的结果</p></blockquote><p>这样写的话未免有点麻烦，那有没有什么方法可以直接实现所有请求都完成后然后才做一些事情的方法呢？</p><ul><li><p>axios.all([])</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sendArr = [</span><br><span class="line">    axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/list"</span></span><br><span class="line">    ),</span><br><span class="line">    axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/info"</span></span><br><span class="line">    ),</span><br><span class="line">    axios.post(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/add"</span></span><br><span class="line">    ),</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">//=&gt; 三个请求都完成才做一些事情（可以基于ALL实现）</span></span><br><span class="line">axios.all(sendArr).then((result) =&gt; &#123;</span><br><span class="line">    console.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>返回结果如下：</p><p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/images/Ajax%E5%9B%BE%E7%89%87/axios.all()%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C.png" alt="" /></p><p>返回结果是一个数组，分别存储每一个请求的结果</p></li><li><p>axios.spread返回每次请求的结果</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">axios.all(sendArr).then(</span><br><span class="line">    axios.spread(<span class="function">(<span class="params">resA, resB, resC</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//=&gt; RES-A/-B/-C分别代表三次请求的结果</span></span><br><span class="line">        <span class="comment">//=&gt; 原理搜索JS中的柯里化函数</span></span><br><span class="line">        <span class="built_in">console</span>.log(resA);</span><br><span class="line">        <span class="built_in">console</span>.log(resB);</span><br><span class="line">        <span class="built_in">console</span>.log(resC);</span><br><span class="line">    &#125;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      axios的请求合并以及参数配置
+    
+    </summary>
     
     
-      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
