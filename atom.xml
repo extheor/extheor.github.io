@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://extheor.club/"/>
-  <updated>2020-10-07T14:29:14.530Z</updated>
+  <updated>2020-10-15T07:09:01.562Z</updated>
   <id>https://extheor.club/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FL如何用试用版保存音乐工程文件</title>
+    <link href="https://extheor.club/posts/380dfa6c/index.html"/>
+    <id>https://extheor.club/posts/380dfa6c/index.html</id>
+    <published>2020-10-15T07:08:21.000Z</published>
+    <updated>2020-10-15T07:09:01.562Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="fl如何用试用版保存音乐工程文件"><a class="markdownIt-Anchor" href="#fl如何用试用版保存音乐工程文件"></a> FL如何用试用版保存音乐工程文件</h1><p>首先，下载软件 Hex Edit Neo，可以百度自行下载<br />然后鼠标右击工程文件，用 Hex Edit 打开<br /><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200822223008268.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Nvb2xfYnJlZXplXw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述" /><br />将 00000020 这行下的 09 0a两列的值改为 03 25<br /><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://img-blog.csdnimg.cn/20200822223228816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0Nvb2xfYnJlZXplXw==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述" /><br />然后保存退出，用 fl studio20 打开即可~</p>]]></content>
+    
+    <summary type="html">
+    
+      FL如何用试用版保存音乐工程文件
+    
+    </summary>
+    
+    
+      <category term="FL" scheme="https://extheor.club/categories/FL/"/>
+    
+    
+      <category term="FL" scheme="https://extheor.club/tags/FL/"/>
+    
+  </entry>
   
   <entry>
     <title>拗音</title>
@@ -35,6 +58,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -57,6 +84,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -79,6 +110,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -101,6 +136,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -123,6 +162,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -145,6 +188,10 @@
     </summary>
     
     
+      <category term="promise" scheme="https://extheor.club/categories/promise/"/>
+    
+    
+      <category term="promise" scheme="https://extheor.club/tags/promise/"/>
     
   </entry>
   
@@ -167,6 +214,10 @@
     </summary>
     
     
+      <category term="Nodejs博客系统" scheme="https://extheor.club/categories/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="Nodejs博客系统" scheme="https://extheor.club/tags/Nodejs%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
     
   </entry>
   
@@ -189,6 +240,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -211,6 +266,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -233,6 +292,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -255,6 +318,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -277,6 +344,10 @@
     </summary>
     
     
+      <category term="日语" scheme="https://extheor.club/categories/%E6%97%A5%E8%AF%AD/"/>
+    
+    
+      <category term="日语" scheme="https://extheor.club/tags/%E6%97%A5%E8%AF%AD/"/>
     
   </entry>
   
@@ -296,6 +367,14 @@
     </summary>
     
     
+      <category term="Hexo" scheme="https://extheor.club/categories/Hexo/"/>
+    
+      <category term="标签外挂" scheme="https://extheor.club/categories/Hexo/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
+    
+    
+      <category term="Hexo" scheme="https://extheor.club/tags/Hexo/"/>
+    
+      <category term="标签外挂" scheme="https://extheor.club/tags/%E6%A0%87%E7%AD%BE%E5%A4%96%E6%8C%82/"/>
     
   </entry>
   
@@ -315,25 +394,10 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>NodeJs 取参的四种方法</title>
-    <link href="https://extheor.club/posts/7380b71/index.html"/>
-    <id>https://extheor.club/posts/7380b71/index.html</id>
-    <published>2020-09-07T03:35:41.000Z</published>
-    <updated>2020-09-13T06:37:36.949Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="nodejs-取参的四种方法"><a class="markdownIt-Anchor" href="#nodejs-取参的四种方法"></a> NodeJs 取参的四种方法</h1><p>参考：<a href="https://my.oschina.net/u/2519530/blog/535309" target="_blank" rel="noopener">https://my.oschina.net/u/2519530/blog/535309</a> 🙏</p><p>获取请求很中的参数是每个web后台处理的必经之路，nodejs的 <strong>express框架</strong> 提供了四种方法来实现。</p><ol><li><a href="#req.body">req.body</a></li><li><a href="#req.query">req.query</a></li><li><a href="#req.params">req.params</a></li><li><a href="#req.param()">req.param()</a></li></ol><p><a id="req.body"><strong>首先介绍第一个req.body</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">Contains key-value pairs of data submitted in the request body. By default, it is undefined,</span><br><span class="line"> and is populated when you use body-parsing middleware such as body-parser and multer.</span><br><span class="line"></span><br><span class="line">稍微翻译一下：包含了提交数据的键值对在请求的body中，默认是underfined,</span><br><span class="line">你可以用body-parser或者multer来解析body</span><br></pre></td></tr></table></figure><p>解析body不是nodejs默认提供的，你需要载入body-parser中间件才可以使用req.body</p><blockquote><p><font color="red"><strong>此方法通常用来解析POST请求中的数据</strong></font></p></blockquote><p><a id="req.query"><strong>第二种是req.query</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">An object containing a property for each query string parameter in the route. </span><br><span class="line">If there is no query string, it is the empty object, &#123;&#125;.</span><br><span class="line">翻译一下:包含在路由中每个查询字符串参数属性的对象。如果没有，默认为&#123;&#125;</span><br></pre></td></tr></table></figure><p>有nodejs默认提供，无需载入中间件</p><p>举例说明(官方摘抄)：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;search?q&#x3D;tobi+ferret</span><br><span class="line">req.query.q</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tobi ferret&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; GET &#x2F;shoes?order&#x3D;desc&amp;shoe[color]&#x3D;blue&amp;shoe[type]&#x3D;converse</span><br><span class="line">req.query.order</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;desc&quot;</span><br><span class="line">req.query.shoe.color</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;blue&quot;</span><br><span class="line">req.query.shoe.type</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;converse&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>此方法多适用于GET请求，解析GET里的参数</strong></font></p></blockquote><p><a id="req.params"><strong>第三种是 req.params</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">官方文档：</span><br><span class="line">An object containing properties mapped to the named route “parameters”. </span><br><span class="line">For example, if you have the route &#x2F;user&#x2F;:name, </span><br><span class="line">then the “name” property is available as req.params.name. This object defaults to &#123;&#125;.</span><br><span class="line"></span><br><span class="line">翻译：包含映射到指定的路线“参数”属性的对象。</span><br><span class="line">例如，如果你有route&#x2F;user&#x2F;：name，那么“name”属性可作为req.params.name。</span><br><span class="line">该对象默认为&#123;&#125;。</span><br></pre></td></tr></table></figure><p>nodejs默认提供，无需载入其他中间件</p><p>举例说明</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;user&#x2F;tj</span><br><span class="line">req.params.name</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tj&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>多适用于restful风格url中的参数的解析</strong></font></p></blockquote><p>req.query与req.params的区别</p><blockquote><p>req.params包含路由参数（在URL的路径部分），而req.query包含URL的查询参数（在URL的？后的参数）。</p></blockquote><p><a id="req.param()"><strong>最后一种req.param()</strong></a></p><p>此方法被弃用，请看<a href="http://www.expressjs.com.cn/4x/api.html#req.param" target="_blank" rel="noopener">官方解释</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Deprecated. Use either req.params, req.body or req.query, as applicable.</span><br><span class="line">翻译：被弃用，用其他三种方式替换</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      NodeJs 取参的四种方法
-    
-    </summary>
+      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
     
     
+      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
@@ -353,6 +417,33 @@
     </summary>
     
     
+      <category term="MongoDB" scheme="https://extheor.club/categories/MongoDB/"/>
+    
+    
+      <category term="mongodb" scheme="https://extheor.club/tags/mongodb/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NodeJs 取参的四种方法</title>
+    <link href="https://extheor.club/posts/7380b71/index.html"/>
+    <id>https://extheor.club/posts/7380b71/index.html</id>
+    <published>2020-09-07T03:35:41.000Z</published>
+    <updated>2020-09-13T06:37:36.949Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="nodejs-取参的四种方法"><a class="markdownIt-Anchor" href="#nodejs-取参的四种方法"></a> NodeJs 取参的四种方法</h1><p>参考：<a href="https://my.oschina.net/u/2519530/blog/535309" target="_blank" rel="noopener">https://my.oschina.net/u/2519530/blog/535309</a> 🙏</p><p>获取请求很中的参数是每个web后台处理的必经之路，nodejs的 <strong>express框架</strong> 提供了四种方法来实现。</p><ol><li><a href="#req.body">req.body</a></li><li><a href="#req.query">req.query</a></li><li><a href="#req.params">req.params</a></li><li><a href="#req.param()">req.param()</a></li></ol><p><a id="req.body"><strong>首先介绍第一个req.body</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">Contains key-value pairs of data submitted in the request body. By default, it is undefined,</span><br><span class="line"> and is populated when you use body-parsing middleware such as body-parser and multer.</span><br><span class="line"></span><br><span class="line">稍微翻译一下：包含了提交数据的键值对在请求的body中，默认是underfined,</span><br><span class="line">你可以用body-parser或者multer来解析body</span><br></pre></td></tr></table></figure><p>解析body不是nodejs默认提供的，你需要载入body-parser中间件才可以使用req.body</p><blockquote><p><font color="red"><strong>此方法通常用来解析POST请求中的数据</strong></font></p></blockquote><p><a id="req.query"><strong>第二种是req.query</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">官方文档解释：</span><br><span class="line">An object containing a property for each query string parameter in the route. </span><br><span class="line">If there is no query string, it is the empty object, &#123;&#125;.</span><br><span class="line">翻译一下:包含在路由中每个查询字符串参数属性的对象。如果没有，默认为&#123;&#125;</span><br></pre></td></tr></table></figure><p>有nodejs默认提供，无需载入中间件</p><p>举例说明(官方摘抄)：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;search?q&#x3D;tobi+ferret</span><br><span class="line">req.query.q</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tobi ferret&quot;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; GET &#x2F;shoes?order&#x3D;desc&amp;shoe[color]&#x3D;blue&amp;shoe[type]&#x3D;converse</span><br><span class="line">req.query.order</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;desc&quot;</span><br><span class="line">req.query.shoe.color</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;blue&quot;</span><br><span class="line">req.query.shoe.type</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;converse&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>此方法多适用于GET请求，解析GET里的参数</strong></font></p></blockquote><p><a id="req.params"><strong>第三种是 req.params</strong></a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">官方文档：</span><br><span class="line">An object containing properties mapped to the named route “parameters”. </span><br><span class="line">For example, if you have the route &#x2F;user&#x2F;:name, </span><br><span class="line">then the “name” property is available as req.params.name. This object defaults to &#123;&#125;.</span><br><span class="line"></span><br><span class="line">翻译：包含映射到指定的路线“参数”属性的对象。</span><br><span class="line">例如，如果你有route&#x2F;user&#x2F;：name，那么“name”属性可作为req.params.name。</span><br><span class="line">该对象默认为&#123;&#125;。</span><br></pre></td></tr></table></figure><p>nodejs默认提供，无需载入其他中间件</p><p>举例说明</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; GET &#x2F;user&#x2F;tj</span><br><span class="line">req.params.name</span><br><span class="line">&#x2F;&#x2F; &#x3D;&gt; &quot;tj&quot;</span><br></pre></td></tr></table></figure><blockquote><p><font color="red"><strong>多适用于restful风格url中的参数的解析</strong></font></p></blockquote><p>req.query与req.params的区别</p><blockquote><p>req.params包含路由参数（在URL的路径部分），而req.query包含URL的查询参数（在URL的？后的参数）。</p></blockquote><p><a id="req.param()"><strong>最后一种req.param()</strong></a></p><p>此方法被弃用，请看<a href="http://www.expressjs.com.cn/4x/api.html#req.param" target="_blank" rel="noopener">官方解释</a></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Deprecated. Use either req.params, req.body or req.query, as applicable.</span><br><span class="line">翻译：被弃用，用其他三种方式替换</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      NodeJs 取参的四种方法
+    
+    </summary>
+    
+    
+      <category term="Nodejs" scheme="https://extheor.club/categories/Nodejs/"/>
+    
+    
+      <category term="nodejs" scheme="https://extheor.club/tags/nodejs/"/>
     
   </entry>
   
@@ -372,6 +463,10 @@
     </summary>
     
     
+      <category term="MongoDB" scheme="https://extheor.club/categories/MongoDB/"/>
+    
+    
+      <category term="mongodb" scheme="https://extheor.club/tags/mongodb/"/>
     
   </entry>
   
@@ -391,6 +486,10 @@
     </summary>
     
     
+      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
+    
+    
+      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
@@ -410,25 +509,10 @@
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>axios的请求合并以及参数配置</title>
-    <link href="https://extheor.club/posts/12d95a5e/index.html"/>
-    <id>https://extheor.club/posts/12d95a5e/index.html</id>
-    <published>2020-09-05T12:50:41.000Z</published>
-    <updated>2020-09-13T06:37:36.965Z</updated>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/css/APlayer.min.css"><script src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@v0.1/Hexo/assets/js/Meting.min.js"></script><h1 id="axios的请求合并以及参数配置"><a class="markdownIt-Anchor" href="#axios的请求合并以及参数配置"></a> axios的请求合并以及参数配置</h1><p>现在我们假设想要两个请求都完成后才做一些事情，应该怎么办呢？</p><p>我们会想到，可以在第二个请求完成后，一起返回第一个请求结果和第二个请求结果，并且他们是按照代码顺序输出结果的。</p><p>代码演示为：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> result = <span class="literal">null</span>;</span><br><span class="line">axios</span><br><span class="line">    .get(</span><br><span class="line">    <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/info"</span></span><br><span class="line">)</span><br><span class="line">    .then(<span class="function">(<span class="params">resuleA</span>) =&gt;</span> &#123;</span><br><span class="line">    result = resuleA;</span><br><span class="line">    <span class="comment">// console.log(resuleA);</span></span><br><span class="line">    <span class="keyword">return</span> axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/list"</span></span><br><span class="line">    );</span><br><span class="line">&#125;)</span><br><span class="line">    .then(<span class="function">(<span class="params">resultB</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(resultB);</span><br><span class="line">    <span class="built_in">console</span>.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><blockquote><p>我们可以看到，我在第二个then里面利用全局变量 result 返回了第一个then的结果</p></blockquote><p>这样写的话未免有点麻烦，那有没有什么方法可以直接实现所有请求都完成后然后才做一些事情的方法呢？</p><ul><li><p>axios.all([])</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sendArr = [</span><br><span class="line">    axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/list"</span></span><br><span class="line">    ),</span><br><span class="line">    axios.get(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/info"</span></span><br><span class="line">    ),</span><br><span class="line">    axios.post(</span><br><span class="line">        <span class="string">"https://www.easy-mock.com/mock/5b0412beda8a195fb0978627/temp/add"</span></span><br><span class="line">    ),</span><br><span class="line">];</span><br><span class="line"></span><br><span class="line"><span class="comment">//=&gt; 三个请求都完成才做一些事情（可以基于ALL实现）</span></span><br><span class="line">axios.all(sendArr).then((result) =&gt; &#123;</span><br><span class="line">    console.log(result);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>返回结果如下：</p><p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/images/Ajax%E5%9B%BE%E7%89%87/axios.all()%E8%BF%94%E5%9B%9E%E7%BB%93%E6%9E%9C.png" alt="" /></p><p>返回结果是一个数组，分别存储每一个请求的结果</p></li><li><p>axios.spread返回每次请求的结果</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">axios.all(sendArr).then(</span><br><span class="line">    axios.spread(<span class="function">(<span class="params">resA, resB, resC</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="comment">//=&gt; RES-A/-B/-C分别代表三次请求的结果</span></span><br><span class="line">        <span class="comment">//=&gt; 原理搜索JS中的柯里化函数</span></span><br><span class="line">        <span class="built_in">console</span>.log(resA);</span><br><span class="line">        <span class="built_in">console</span>.log(resB);</span><br><span class="line">        <span class="built_in">console</span>.log(resC);</span><br><span class="line">    &#125;)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      axios的请求合并以及参数配置
-    
-    </summary>
+      <category term="Ajax" scheme="https://extheor.club/categories/Ajax/"/>
     
     
+      <category term="ajax" scheme="https://extheor.club/tags/ajax/"/>
     
   </entry>
   
