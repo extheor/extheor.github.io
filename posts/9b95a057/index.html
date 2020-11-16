@@ -1,0 +1,475 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第二章：React 面向组件编程 | 码小余の博客</title><meta name="description" content="第二章：React 面向组件编程  2.1.  基本理解和使用  2.1.1. 效果   2.1.2.  自定义组件(Component) :  定义组件(2 种方式)  1234567891011&#x2F;* 方式 1:  工厂函数组件( 简单组件)*&#x2F;function MyComponent () {    return &lt;h2&gt;工厂函数组件(简单组件)&lt;&#x2F;h2&gt;}&#x2F;* 方式"><meta name="keywords" content="React"><meta name="author" content="Continue.Run,2044580857@qq.com"><meta name="copyright" content="Continue.Run"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extheor/images/maxiaoyu.ico"><link rel="canonical" href="https://extheor.club/posts/9b95a057/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="preconnect" href="//zz.bdstatic.com"/><meta property="og:type" content="article"><meta property="og:title" content="第二章：React 面向组件编程"><meta property="og:url" content="https://extheor.club/posts/9b95a057/"><meta property="og:site_name" content="码小余の博客"><meta property="og:description" content="第二章：React 面向组件编程  2.1.  基本理解和使用  2.1.1. 效果   2.1.2.  自定义组件(Component) :  定义组件(2 种方式)  1234567891011&#x2F;* 方式 1:  工厂函数组件( 简单组件)*&#x2F;function MyComponent () {    return &lt;h2&gt;工厂函数组件(简单组件)&lt;&#x2F;h2&gt;}&#x2F;* 方式"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/1.jpg"><meta property="article:published_time" content="2020-11-16T11:13:50.498Z"><meta property="article:modified_time" content="2020-11-16T11:15:47.028Z"><meta name="twitter:card" content="summary"><link rel="manifest" href="https://cdn.jsdelivr.net/gh/extheor/StaticFile_HEXO/manifest.json"/><link rel="apple-touch-icon" sizes="180x180" href="/img/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/pwa/16.png"/><link rel="mask-icon" href="/img/pwa/safari-pinned-tab.svg" color="#5bbad5"/><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = '1'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?d6787d3cea8d4e352a1082a4e0827cb4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":30,"position":"top","messagePrev":"这篇文章已经发表了","messageNext":"天了，其中某些内容可能已经过时。"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: {"bookmark":{"message_prev":"按","message_next":"键将本页加入书签"},"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: true,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isSidebar: true,
+  postUpdate: '2020-11-16 19:15:47'
+}</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img {
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/css/pool.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/css/iconfont.min.css"><style type="text/css">#toggle-sidebar {left:100px}</style><style type="text/css">.app-refresh{position:fixed;top:-2.2rem;left:0;right:0;z-index:99999;padding:0 1rem;font-size:15px;height:2.2rem;transition:all .3s ease}.app-refresh-wrap{display:flex;color:#fff;height:100%;align-items:center;justify-content:center}.app-refresh-wrap a{color:#fff;text-decoration:underline;cursor:pointer}</style><div class="aplayer" data-id="2674118419" data-server="netease" data-type="playlist" data-fixed="true" data-order="random" data-preload="none"></div><link rel="stylesheet" href="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.css"><script src="https://cdn.bootcss.com/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/extheor/images/码小余.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/03/21/20200321213747.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">109</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">24</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">22</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 媒体</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa-fw fab fa-youtube"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/volantis/"><i class="fa-fw fas fa-book"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/webstack/"><i class="fa-fw fa-fw fas fa-star"></i><span> 网址收藏</span></a></div></div></div></div><div class="code-close" id="body-wrap"><div id="web_bg" data-type="color"></div><div id="sidebar"><i class="fas fa-arrow-right on" id="toggle-sidebar"></i><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#第二章react-面向组件编程"><span class="toc-number">1.</span> <span class="toc-text"> 第二章：React 面向组件编程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#21-基本理解和使用"><span class="toc-number">1.1.</span> <span class="toc-text"> 2.1.  基本理解和使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#211-效果"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 2.1.1. 效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#212-自定义组件component"><span class="toc-number">1.1.2.</span> <span class="toc-text"> 2.1.2.  自定义组件(Component) :</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#213-注意"><span class="toc-number">1.1.3.</span> <span class="toc-text"> 2.1.3.  注意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#214-render-渲染组件标签的基本流程"><span class="toc-number">1.1.4.</span> <span class="toc-text"> 2.1.4. render() 渲染组件标签的基本流程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#22-组件三大属性-1-state"><span class="toc-number">1.2.</span> <span class="toc-text"> 2.2.  组件三大属性 1: state</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#221-效果"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 2.2.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#222-理解"><span class="toc-number">1.2.2.</span> <span class="toc-text"> 2.2.2.  理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#223-编码操作"><span class="toc-number">1.2.3.</span> <span class="toc-text"> 2.2.3.  编码操作</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#23-组件三大属性-2-props"><span class="toc-number">1.3.</span> <span class="toc-text"> 2.3.  组件三大属性 2: props</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#231-效果"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 2.3.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#232-理解"><span class="toc-number">1.3.2.</span> <span class="toc-text"> 2.3.2.  理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#233-作用"><span class="toc-number">1.3.3.</span> <span class="toc-text"> 2.3.3.  作用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#234-编码操作"><span class="toc-number">1.3.4.</span> <span class="toc-text"> 2.3.4.  编码操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#235-面试题"><span class="toc-number">1.3.5.</span> <span class="toc-text"> 2.3.5.  面试题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#24-组件三大属性-3-refs-与事件处理"><span class="toc-number">1.4.</span> <span class="toc-text"> 2.4.  组件三大属性 3: refs  与事件处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#241-效果"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 2.4.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#242-组件的-3-大属性之二-refs-属性"><span class="toc-number">1.4.2.</span> <span class="toc-text"> 2.4.2.  组件的 3  大属性之二: refs  属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#243-事件处理"><span class="toc-number">1.4.3.</span> <span class="toc-text"> 2.4.3.  事件处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#244-强烈注意"><span class="toc-number">1.4.4.</span> <span class="toc-text"> 2.4.4.  强烈注意</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#25-组件的组合"><span class="toc-number">1.5.</span> <span class="toc-text"> 2.5.  组件的组合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#251-效果"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 2.5.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#252-功能界面的组件化编码流程-无比重要"><span class="toc-number">1.5.2.</span> <span class="toc-text"> 2.5.2.  功能界面的组件化编码流程( 无比重要)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#26-收集表单数据"><span class="toc-number">1.6.</span> <span class="toc-text"> 2.6.  收集表单数据</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#261-效果"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 2.6.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#262-理解"><span class="toc-number">1.6.2.</span> <span class="toc-text"> 2.6.2.  理解</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#27-组件生命周期"><span class="toc-number">1.7.</span> <span class="toc-text"> 2.7.  组件生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#271-效果"><span class="toc-number">1.7.1.</span> <span class="toc-text"> 2.7.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#272-理解"><span class="toc-number">1.7.2.</span> <span class="toc-text"> 2.7.2.  理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#273-生命周期流程图"><span class="toc-number">1.7.3.</span> <span class="toc-text"> 2.7.3.  生命周期流程图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#274-生命周期详述"><span class="toc-number">1.7.4.</span> <span class="toc-text"> 2.7.4.  生命周期详述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#275-重要的勾子"><span class="toc-number">1.7.5.</span> <span class="toc-text"> 2.7.5.  重要的勾子</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#28-虚拟-dom-与-与-dom-diff-算法"><span class="toc-number">1.8.</span> <span class="toc-text"> 2.8.  虚拟 DOM 与 与 DOM Diff  算法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#281-效果"><span class="toc-number">1.8.1.</span> <span class="toc-text"> 2.8.1.  效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#282-基本原理图"><span class="toc-number">1.8.2.</span> <span class="toc-text"> 2.8.2. 基本原理图</span></a></li></ol></li></ol></li></ol></div></div></div><header class="post-bg" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/1.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">码小余の博客</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 媒体</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/bangumis/"><i class="fa-fw fa-fw fab fa-youtube"></i><span> 番剧</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/volantis/"><i class="fa-fw fas fa-book"></i><span> 文档</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/webstack/"><i class="fa-fw fa-fw fas fa-star"></i><span> 网址收藏</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="post-info"><div id="post-title"><div class="posttitle">第二章：React 面向组件编程</div></div><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2020-11-16T11:13:50.498Z" title="发表于 2020-11-16 19:13:50">2020-11-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2020-11-16T11:15:47.028Z" title="更新于 2020-11-16 19:15:47">2020-11-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/React/">React</a></span></div><div class="meta-secondline"> <span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.7k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>6分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/posts/9b95a057/index.html#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/posts/9b95a057/index.html" itemprop="commentCount"></span></a></span></div></div></div></header><main class="layout_post" id="content-inner"><article id="post"><div class="post-content" id="article-container"><h1 id="第二章react-面向组件编程"><a class="markdownIt-Anchor" href="#第二章react-面向组件编程"></a> 第二章：React 面向组件编程</h1>
+<h2 id="21-基本理解和使用"><a class="markdownIt-Anchor" href="#21-基本理解和使用"></a> 2.1.  基本理解和使用</h2>
+<h3 id="211-效果"><a class="markdownIt-Anchor" href="#211-效果"></a> 2.1.1. 效果</h3>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@8777d312d06824c7e9c013b2da3603de89fdc610/2020/11/14/ece1cfc843821721cbbece68112a797c.png" alt="image-20201114145701687"></p>
+<h3 id="212-自定义组件component"><a class="markdownIt-Anchor" href="#212-自定义组件component"></a> 2.1.2.  自定义组件(Component) :</h3>
+<ol>
+<li>定义组件(2 种方式)</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 方式 1:  工厂函数组件( 简单组件)*/</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">MyComponent</span> (<span class="params"></span>) </span>{</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>工厂函数组件(简单组件)<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">}</span><br><span class="line"><span class="comment">/* 方式 2: ES6  类组件( 复杂组件)*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyComponent2</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>{</span><br><span class="line">    render () {</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>) <span class="comment">// MyComponent2 的实例对象</span></span><br><span class="line">        <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>ES6 类组件(复杂组件)<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>渲染组件标签</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ReactDOM.render(<span class="xml"><span class="tag">&lt;<span class="name">MyComponent</span> /&gt;</span></span>, <span class="built_in">document</span>.getElementById(<span class="string">'example1'</span>))</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="213-注意"><a class="markdownIt-Anchor" href="#213-注意"></a> 2.1.3.  注意</h3>
+<ol>
+<li>
+<p>组件名必须首字母大写</p>
+</li>
+<li>
+<p>虚拟 DOM 元素只能有一个根元素</p>
+</li>
+<li>
+<p>虚拟 DOM 元素必须有结束标签</p>
+</li>
+</ol>
+<h3 id="214-render-渲染组件标签的基本流程"><a class="markdownIt-Anchor" href="#214-render-渲染组件标签的基本流程"></a> 2.1.4. render() 渲染组件标签的基本流程</h3>
+<ol>
+<li>
+<p>React 内部会创建组件实例对象</p>
+</li>
+<li>
+<p>得到包含的虚拟 DOM 并解析为真实 DOM</p>
+</li>
+<li>
+<p>插入到指定的页面元素内部</p>
+</li>
+</ol>
+<h2 id="22-组件三大属性-1-state"><a class="markdownIt-Anchor" href="#22-组件三大属性-1-state"></a> 2.2.  组件三大属性 1: state</h2>
+<h3 id="221-效果"><a class="markdownIt-Anchor" href="#221-效果"></a> 2.2.1.  效果</h3>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@83d4f61caaf7d8114e802382b85a7ee66d562430/2020/11/14/e0e221e25086ce22567798154c68beae.png" alt="Like组件"></p>
+<h3 id="222-理解"><a class="markdownIt-Anchor" href="#222-理解"></a> 2.2.2.  理解</h3>
+<ol>
+<li>
+<p>state 是组件对象最重要的属性, 值是对象(可以包含多个数据)</p>
+</li>
+<li>
+<p>组件被称为"状态机", 通过更新组件的 state 来更新对应的页面显示(重新渲染组件)</p>
+</li>
+</ol>
+<h3 id="223-编码操作"><a class="markdownIt-Anchor" href="#223-编码操作"></a> 2.2.3.  编码操作</h3>
+<ol>
+<li>初始化状态:</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span> (props) {</span><br><span class="line">    <span class="keyword">super</span>(props)</span><br><span class="line">    <span class="keyword">this</span>.state = {</span><br><span class="line">        stateProp1 : value1,</span><br><span class="line">        stateProp2 : value2</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>读取某个状态值</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.state.statePropertyName</span><br></pre></td></tr></tbody></table></figure>
+<ol start="3">
+<li>更新状态----&gt;组件界面更新</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.setState({</span><br><span class="line">    stateProp1 : value1,</span><br><span class="line">    stateProp2 : value2</span><br><span class="line">})</span><br></pre></td></tr></tbody></table></figure>
+<h2 id="23-组件三大属性-2-props"><a class="markdownIt-Anchor" href="#23-组件三大属性-2-props"></a> 2.3.  组件三大属性 2: props</h2>
+<h3 id="231-效果"><a class="markdownIt-Anchor" href="#231-效果"></a> 2.3.1.  效果</h3>
+<p>需求 : 自定义用来显示一个人员信息的组件</p>
+<p>1). 姓名必须指定</p>
+<p>2). 如果性别没有指定 , 默认为男</p>
+<p>3). 如果年龄没有指定 , 默认为 18</p>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@4d3ac17f16a795c62c808cd31d032d8b1a7b3f8b/2020/11/14/52a5fb4b2aee38ca7750ca2d53570259.png" alt="image-20201114150301097"></p>
+<h3 id="232-理解"><a class="markdownIt-Anchor" href="#232-理解"></a> 2.3.2.  理解</h3>
+<ol>
+<li>
+<p>每个组件对象都会有 props(properties 的简写)属性</p>
+</li>
+<li>
+<p>组件标签的所有属性都保存在 props 中</p>
+</li>
+</ol>
+<h3 id="233-作用"><a class="markdownIt-Anchor" href="#233-作用"></a> 2.3.3.  作用</h3>
+<ol>
+<li>
+<p>通过标签属性从组件外向组件内传递变化的数据</p>
+</li>
+<li>
+<p>注意: 组件内部不要修改 props 数据</p>
+</li>
+</ol>
+<h3 id="234-编码操作"><a class="markdownIt-Anchor" href="#234-编码操作"></a> 2.3.4.  编码操作</h3>
+<ol>
+<li>内部读取某个属性值</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.props.propertyName</span><br></pre></td></tr></tbody></table></figure>
+<ol start="2">
+<li>对 props 中的属性值进行类型限制和必要性限制</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Person.propTypes = {</span><br><span class="line">    name: React.PropTypes.string.isRequired,</span><br><span class="line">    age: React.PropTypes.number.isRequired</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ol start="3">
+<li>扩展属性: 将对象的所有属性通过 props 传递</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Person {...person}/&gt;</span><br></pre></td></tr></tbody></table></figure>
+<ol start="4">
+<li>默认属性值</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Person.defaultProps = {</span><br><span class="line">    name: <span class="string">'Mary'</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<ol start="5">
+<li>组件类的构造函数</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">constructor</span> (props) {</span><br><span class="line">    <span class="keyword">super</span>(props)</span><br><span class="line">    <span class="built_in">console</span>.log(props) <span class="comment">// 查看所有属性</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="235-面试题"><a class="markdownIt-Anchor" href="#235-面试题"></a> 2.3.5.  面试题</h3>
+<p>问题: 请区别一下组件的 props 和 state 属性</p>
+<ol>
+<li>
+<p>state: 组件自身内部可变化的数据</p>
+</li>
+<li>
+<p>props: 从组件外部向组件内部传递数据, 组件内部只读不修改</p>
+</li>
+</ol>
+<h2 id="24-组件三大属性-3-refs-与事件处理"><a class="markdownIt-Anchor" href="#24-组件三大属性-3-refs-与事件处理"></a> 2.4.  组件三大属性 3: refs  与事件处理</h2>
+<h3 id="241-效果"><a class="markdownIt-Anchor" href="#241-效果"></a> 2.4.1.  效果</h3>
+<p>需求 : 自定义组件 , 功能说明如下 :</p>
+<ol start="2">
+<li>点击按钮 , 提示第一个输入框中的值</li>
+<li>当第 2 个输入框失去焦点时,提示这个输入框中的值</li>
+</ol>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@a0ab9e2b2fe714b56421298edadb2f472b5efef4/2020/11/14/48fbf6bc1d40af6372c9cd074b78f3d3.png" alt=""></p>
+<h3 id="242-组件的-3-大属性之二-refs-属性"><a class="markdownIt-Anchor" href="#242-组件的-3-大属性之二-refs-属性"></a> 2.4.2.  组件的 3  大属性之二: refs  属性</h3>
+<ol>
+<li>组件内的标签都可以定义 ref 属性来标识自己</li>
+</ol>
+<p>a. <code>&lt;input type="text" ref={input =&gt; this.msgInput = input}/&gt;</code></p>
+<p>b. 回调函数在组件初始化渲染完或卸载时自动调用</p>
+<ol start="2">
+<li>
+<p>在组件中可以通过 this.msgInput 来得到对应的真实 DOM 元素</p>
+</li>
+<li>
+<p>作用: 通过 ref 获取组件内容特定标签对象, 进行读取其相关数据</p>
+</li>
+</ol>
+<h3 id="243-事件处理"><a class="markdownIt-Anchor" href="#243-事件处理"></a> 2.4.3.  事件处理</h3>
+<ol>
+<li>通过 onXxx 属性指定组件的事件处理函数(注意大小写)</li>
+</ol>
+<p>a. React 使用的是自定义(合成)事件, 而不是使用的原生 DOM 事件</p>
+<p>b. React 中的事件是通过事件委托方式处理的(委托给组件最外层的元素)</p>
+<ol start="2">
+<li>通过 event.target 得到发生事件的 DOM 元素对象</li>
+</ol>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;input onFocus={<span class="keyword">this</span>.handleClick}/&gt;</span><br><span class="line">handleFocus(event) {</span><br><span class="line">    event.target <span class="comment">// 返回 input 对象</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="244-强烈注意"><a class="markdownIt-Anchor" href="#244-强烈注意"></a> 2.4.4.  强烈注意</h3>
+<ol>
+<li>
+<p>组件内置的方法中的 this 为组件对象</p>
+</li>
+<li>
+<p>在组件类中自定义的方法中 this 为 null</p>
+</li>
+</ol>
+<p>a. 强制绑定 this: 通过函数对象的 <code>bind()</code></p>
+<p>b. 箭头函数(ES6 模块化编码时才能使用)</p>
+<h2 id="25-组件的组合"><a class="markdownIt-Anchor" href="#25-组件的组合"></a> 2.5.  组件的组合</h2>
+<h3 id="251-效果"><a class="markdownIt-Anchor" href="#251-效果"></a> 2.5.1.  效果</h3>
+<p>功能: 组件化实现此功能</p>
+<ol>
+<li>显示所有 todo 列表</li>
+<li>输入文本, 点击按钮显示到列表的首位, 并清除输入的文本</li>
+</ol>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@7d41961a8184eeb5963c61f7f4b5e588ef6d83c3/2020/11/14/fac5efdfa6d616e2dc7ccfad23f687e2.png" alt="component    组合使用"></p>
+<h3 id="252-功能界面的组件化编码流程-无比重要"><a class="markdownIt-Anchor" href="#252-功能界面的组件化编码流程-无比重要"></a> 2.5.2.  功能界面的组件化编码流程( 无比重要)</h3>
+<ol>
+<li>
+<p>拆分组件: 拆分界面,抽取组件</p>
+</li>
+<li>
+<p>实现静态组件: 使用组件实现静态页面效果</p>
+</li>
+<li>
+<p>实现动态组件</p>
+</li>
+</ol>
+<p>a. 动态显示初始化数据</p>
+<p>b. 交互功能(从绑定事件监听开始)</p>
+<h2 id="26-收集表单数据"><a class="markdownIt-Anchor" href="#26-收集表单数据"></a> 2.6.  收集表单数据</h2>
+<h3 id="261-效果"><a class="markdownIt-Anchor" href="#261-效果"></a> 2.6.1.  效果</h3>
+<p>需求: 自定义包含表单的组件</p>
+<ol>
+<li>输入用户名密码后, 点击登陆提示输入信息</li>
+<li>不提交表单</li>
+</ol>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@7d41961a8184eeb5963c61f7f4b5e588ef6d83c3/2020/11/14/fac5efdfa6d616e2dc7ccfad23f687e2.png" alt=""></p>
+<h3 id="262-理解"><a class="markdownIt-Anchor" href="#262-理解"></a> 2.6.2.  理解</h3>
+<ol>
+<li>
+<p>问题: 在 react 应用中, 如何收集表单输入数据</p>
+</li>
+<li>
+<p>包含表单的组件分类</p>
+</li>
+</ol>
+<p>a. 受控组件: 表单项输入数据能自动收集成状态</p>
+<p>b. 非受控组件: 需要时才手动读取表单输入框中的数据</p>
+<h2 id="27-组件生命周期"><a class="markdownIt-Anchor" href="#27-组件生命周期"></a> 2.7.  组件生命周期</h2>
+<h3 id="271-效果"><a class="markdownIt-Anchor" href="#271-效果"></a> 2.7.1.  效果</h3>
+<p>需求: 自定义组件</p>
+<ol>
+<li>让指定的文本做显示/隐藏的渐变动画</li>
+<li>切换持续时间为 2S</li>
+<li>点击按钮从界面中移除组件界面</li>
+</ol>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@f8998d267bb8fed63397be304932cf40641457cb/2020/11/14/a94be5a649f8f47f0669c7c408915992.png" alt="component    生命周期"></p>
+<h3 id="272-理解"><a class="markdownIt-Anchor" href="#272-理解"></a> 2.7.2.  理解</h3>
+<blockquote>
+<p>render方法，一旦状态改变，就会重新调用</p>
+</blockquote>
+<ol>
+<li>
+<p>组件对象从创建到死亡它会经历特定的生命周期阶段</p>
+</li>
+<li>
+<p>React 组件对象包含一系列的勾子函数(生命周期回调函数), 在生命周期特定时刻回调</p>
+</li>
+<li>
+<p>我们在定义组件时, 可以重写特定的生命周期回调函数, 做特定的工作</p>
+</li>
+</ol>
+<h3 id="273-生命周期流程图"><a class="markdownIt-Anchor" href="#273-生命周期流程图"></a> 2.7.3.  生命周期流程图</h3>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@7920d00863e1433041be193e82c221148220e5f2/2020/11/14/42e4a3e1ae4a66ddeafd11ff195aed1a.png" alt="image-20201114162648669"></p>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@decf8879e1ece8b45d4a1dcf594ae6c6f61eadd8/2020/11/15/c0aa5072a10e7c65496d38bd78902ddc.png" alt="image-20201115142403135"></p>
+<h3 id="274-生命周期详述"><a class="markdownIt-Anchor" href="#274-生命周期详述"></a> 2.7.4.  生命周期详述</h3>
+<ol>
+<li>组件的三个生命周期状态:</li>
+</ol>
+<ul>
+<li>Mount：插入真实 DOM</li>
+<li>Update：被重新渲染</li>
+<li>Unmount：被移出真实 DOM</li>
+</ul>
+<ol start="2">
+<li>React 为每个状态都提供了勾子(hook)函数</li>
+</ol>
+<ul>
+<li>componentWillMount()</li>
+</ul>
+<ul>
+<li>componentDidMount()</li>
+</ul>
+<ul>
+<li>componentWillUpdate()</li>
+<li>componentDidUpdate()</li>
+<li>componentWillUnmount()</li>
+</ul>
+<ol start="3">
+<li>生命周期流程:</li>
+</ol>
+<p>a. 第一次初始化渲染显示: ReactDOM.render()</p>
+<ul>
+<li>constructor(): 创建对象初始化 state</li>
+<li>componentWillMount() : 将要插入回调</li>
+<li>render() : 用于插入虚拟 DOM 回调</li>
+<li>componentDidMount() : 已经插入回调</li>
+</ul>
+<p>b. 每次更新 state: this.setSate()</p>
+<ul>
+<li>componentWillUpdate() : 将要更新回调</li>
+<li>render() : 更新(重新渲染)</li>
+<li>componentDidUpdate() : 已经更新回调</li>
+</ul>
+<p>c. 移除组件: ReactDOM.unmountComponentAtNode(containerDom)</p>
+<ul>
+<li>componentWillUnmount() : 组件将要被移除回调</li>
+</ul>
+<h3 id="275-重要的勾子"><a class="markdownIt-Anchor" href="#275-重要的勾子"></a> 2.7.5.  重要的勾子</h3>
+<ol>
+<li>
+<p>render(): 初始化渲染或更新渲染调用</p>
+</li>
+<li>
+<p>componentDidMount(): 开启监听, 发送 ajax 请求</p>
+</li>
+<li>
+<p>componentWillUnmount(): 做一些收尾工作, 如: 清理定时器</p>
+</li>
+<li>
+<p>componentWillReceiveProps(): 后面需要时讲</p>
+</li>
+</ol>
+<h2 id="28-虚拟-dom-与-与-dom-diff-算法"><a class="markdownIt-Anchor" href="#28-虚拟-dom-与-与-dom-diff-算法"></a> 2.8.  虚拟 DOM 与 与 DOM Diff  算法</h2>
+<h3 id="281-效果"><a class="markdownIt-Anchor" href="#281-效果"></a> 2.8.1.  效果</h3>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@9e90eb6553d6e813e8e24882e191af0f34798884/2020/11/14/37599a6d1087f17065a557a1deb9975e.png" alt="component    虚拟DOM"></p>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>{</span><br><span class="line">    <span class="keyword">constructor</span>(props) {</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.state = {</span><br><span class="line">            date: <span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    componentDidMount () {</span><br><span class="line">        setInterval(<span class="function"><span class="params">()</span> =&gt;</span> {</span><br><span class="line">            <span class="keyword">this</span>.setState({</span><br><span class="line">                date: <span class="keyword">new</span> <span class="built_in">Date</span>()</span><br><span class="line">            })</span><br><span class="line">        }, <span class="number">1000</span>)</span><br><span class="line">    }</span><br><span class="line">    render () {</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="string">'render()'</span>)</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line"></span><br><span class="line">            &lt;p&gt;</span><br><span class="line">            Hello, &lt;input type=<span class="string">"text"</span> placeholder=<span class="string">"Your name here"</span>/&gt;!&amp;nbsp;</span><br><span class="line">            It is {<span class="keyword">this</span>.state.date.toTimeString()}</span><br><span class="line">    &lt;<span class="regexp">/p&gt;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">}</span></span><br><span class="line"><span class="regexp">}</span></span><br><span class="line"><span class="regexp">ReactDOM.render(</span></span><br><span class="line"><span class="regexp">    &lt;HelloWorld/</span>&gt;,</span><br><span class="line">    <span class="built_in">document</span>.getElementById(<span class="string">'example'</span>)</span><br><span class="line">)</span><br></pre></td></tr></tbody></table></figure>
+<h3 id="282-基本原理图"><a class="markdownIt-Anchor" href="#282-基本原理图"></a> 2.8.2. 基本原理图</h3>
+<p><img src= "https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/loading9.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/extheor/HexoStaticFile@2819f7b8d25d9a6cfc51c8f165ba3ff59b85a1a0/2020/11/14/a7b8c92c50d463d1cd7b791f967b0062.png" alt="image-20201114185318484"></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:2044580857@qq.com">Continue.Run</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://extheor.club/posts/9b95a057/index.html">https://extheor.club/posts/9b95a057/index.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://extheor.club" target="_blank">码小余の博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/React/">React</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/1.jpg" data-sites="qq,wechat,weibo,facebook,twitter"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/extheor/images/wechat.png" alt="wechat" onclick="window.open('https://cdn.jsdelivr.net/gh/extheor/images/wechat.png')"/><div class="post-qr-code__desc">wechat</div></li><li class="reward-item"><img class="post-qr-code__img" src="https://cdn.jsdelivr.net/gh/extheor/images/alipay.jpg" alt="alipay" onclick="window.open('https://cdn.jsdelivr.net/gh/extheor/images/alipay.jpg')"/><div class="post-qr-code__desc">alipay</div></li></ul></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/af4880c3/index.html"><img class="prev-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/5.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/404.jpg'"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">第六章：react-router4</div></div></a></div><div class="next-post pull-right"><a href="/posts/607fa29/index.html"><img class="next-cover" data-lazy-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/10.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">第八章：redux</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/posts/79dfcc1f/index.html" title="第一章：React入门"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/16.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-16</div><div class="relatedPosts_title">第一章：React入门</div></div></a></div><div class="relatedPosts_item"><a href="/posts/9fee4710/index.html" title="第三章：react  应用( 基于 react ）"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/5.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-16</div><div class="relatedPosts_title">第三章：react  应用( 基于 react ）</div></div></a></div><div class="relatedPosts_item"><a href="/posts/235acbda/index.html" title="第七章：react-ui"><img class="relatedPosts_cover" data-lazy-src="https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/media/image/13.jpg"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="far fa-calendar-alt fa-fw"></i> 2020-11-16</div><div class="relatedPosts_title">第七章：react-ui</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020  <i id="heartbeat" class="fa fas fa-heartbeat"></i> Continue.Run</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">CDN BY <a target="_blank" rel="external nofollow" href="https://www.jsdelivr.com/"><b>jsDelivr</b></a> | HOST BY <a target="_blank" rel="external nofollow" href="https://coding.net/"><b>Coding</b></a> && <a target="_blank" rel="external nofollow" href="https://github.com/"><b>Github</b></a></div></div><head><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="码小余の博客" type="application/atom+xml">
+
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head></footer></div><section id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font_plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font_minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/js/utils.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/js/main.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/third-party/activate-power-mode.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.spacingElementById('content-inner')
+  else {
+    $.getScript('https://cdn.jsdelivr.net/npm/pangu/dist/browser/pangu.min.js', () => {
+      pangu.spacingElementById('content-inner')
+    })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguFn)</script><script src="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@v3.3.1/butterfly/js/search/local-search.js"></script><div class="js-pjax"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script>function loadValine () {
+  function requestSetting (from, set) {
+    var from = from
+    var setting = set.split(',').filter(function(item){
+    return from.indexOf(item) > -1
+    });
+    setting = setting.length == 0 ? from :setting;
+    return setting
+  }
+
+  var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+  var requiredFields = requestSetting(['nick','mail'],'nick,mail')
+
+  function initValine () {
+    window.valine = new Valine({
+      el: '#vcomment',
+      appId: 'DwAdB1tDehKjFe3RurrLXdlW-gzGzoHsz',
+      appKey: 'S7Ttf3Yeh4jmsoThjJ3CEIK6',
+      placeholder: '建议在上方留下昵称和邮箱等信息，以便收到回复通知（以下三选一）\t\n1、仅在昵称中留下QQ号（系统自动获取QQ昵称、QQ邮箱、QQ头像等信息）\t\n2、自定义填写昵称、邮箱、网址信息（系统自动匹配头像）\t\n3、匿名留言（不会收到留言回复通知，不推荐）\t\n如果我的表情框里没有你需要的表情，可以在右上角小功能处点击表情速查！',
+      avatar: 'identicon',
+      meta: guestInfo,
+      pageSize: '5',
+      lang: 'zh-cn',
+      recordIP: true,
+      serverURLs: '',
+      //- emojiCDN: './valine.json',
+      // 设置Bilibili表情包地址
+      emojiCDN: '//i0.hdslb.com/bfs/emote/',
+      // 表情title和图片映射
+      emojiMaps: {"tv_doge":"6ea59c827c414b4a2955fe79e0f6fd3dcd515e24.png","tv_亲亲":"a8111ad55953ef5e3be3327ef94eb4a39d535d06.png","tv_偷笑":"bb690d4107620f1c15cff29509db529a73aee261.png","tv_再见":"180129b8ea851044ce71caf55cc8ce44bd4a4fc8.png","tv_冷漠":"b9cbc755c2b3ee43be07ca13de84e5b699a3f101.png","tv_发怒":"34ba3cd204d5b05fec70ce08fa9fa0dd612409ff.png","tv_发财":"34db290afd2963723c6eb3c4560667db7253a21a.png","tv_可爱":"9e55fd9b500ac4b96613539f1ce2f9499e314ed9.png","tv_吐血":"09dd16a7aa59b77baa1155d47484409624470c77.png","tv_呆":"fe1179ebaa191569b0d31cecafe7a2cd1c951c9d.png","tv_呕吐":"9f996894a39e282ccf5e66856af49483f81870f3.png","tv_困":"241ee304e44c0af029adceb294399391e4737ef2.png","tv_坏笑":"1f0b87f731a671079842116e0991c91c2c88645a.png","tv_大佬":"093c1e2c490161aca397afc45573c877cdead616.png","tv_大哭":"23269aeb35f99daee28dda129676f6e9ea87934f.png","tv_委屈":"d04dba7b5465779e9755d2ab6f0a897b9b33bb77.png","tv_害羞":"a37683fb5642fa3ddfc7f4e5525fd13e42a2bdb1.png","tv_尴尬":"7cfa62dafc59798a3d3fb262d421eeeff166cfa4.png","tv_微笑":"70dc5c7b56f93eb61bddba11e28fb1d18fddcd4c.png","tv_思考":"90cf159733e558137ed20aa04d09964436f618a1.png","tv_惊吓":"0d15c7e2ee58e935adc6a7193ee042388adc22af.png","tv_打脸":"56ab10b624063e966bfcb76ea5dc4794d87dfd47.png","tv_抓狂":"fe31c08edad661d63762b04e17b8d5ae3c71a757.png","tv_抠鼻":"c666f55e88d471e51bbd9fab9bb308110824a6eb.png","tv_斜眼笑":"911f987aa8bc1bee12d52aafe62bc41ef4474e6c.png","tv_无奈":"ea8ed89ee9878f2fece2dda0ea8a5dbfe21b5751.png","tv_晕":"5443c22b4d07fb1907ccc610c8e6db254f2461b7.png","tv_流汗":"cead1c351ab8d79e9f369605beb90148db0fbed3.png","tv_流泪":"7e71cde7858f0cd50d74b0264aa26db612a8a167.png","tv_流鼻血":"c32d39db2737f89b904ca32700d140a9241b0767.png","tv_点赞":"f85c354995bd99e28fc76c869bfe42ba6438eff4.png","tv_生气":"26702dcafdab5e8225b43ffd23c94ac1ff932654.png","tv_生病":"8b0ec90e6b86771092a498c54f09fc94621c1900.png","tv_疑问":"0793d949b18d7be716078349c202c15ff166f314.png","tv_白眼":"c1d59f439e379ee50eef488bcb5e5378e5044ea4.png","tv_皱眉":"72ccad6679fea0d14cce648b4d818e09b8ffea2d.png","tv_目瞪口呆":"0b8cb81a68de5d5365212c99375e7ace3e7891b7.png","tv_睡着":"8b196675b53af58264f383c50ad0945048290b33.png","tv_笑哭":"1abc628f6d4f4caf9d0e7800878f4697abbc8273.png","tv_腼腆":"89712c0d4af73e67f89e35cbc518420380a7f6f4.png","tv_色":"61822c7e9aae5da76475e7892534545336b23a6f.png","tv_调侃":"4bc022533ef31544ca0d72c12c808cf4a1cce3e3.png","tv_调皮":"b9c41de8e82dd7a8515ae5e3cb63e898bf245186.png","tv_鄙视":"6e72339f346a692a495b123174b49e4e8e781303.png","tv_闭嘴":"c9e990da7f6e93975e25fd8b70e2e290aa4086ef.png","tv_难过":"87f46748d3f142ebc6586ff58860d0e2fc8263ba.png","tv_馋":"fc7e829b845c43c623c8b490ee3602b7f0e76a31.png","tv_鬼脸":"0ffbbddf8a94d124ca2f54b360bbc04feb6bbfea.png","tv_黑人问号":"45821a01f51bc867da9edbaa2e070410819a95b2.png","tv_鼓掌":"1d21793f96ef4e6f48b23e53e3b9e42da833a0f6.png"},
+      
+      enableQQ: true,
+      requiredFields: requiredFields,
+      path: window.location.pathname,
+    });
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else $.getScript('https://cdn.jsdelivr.net/gh/HCLonely/Valine@v1.4.14/dist/Valine.min.js', initValine)
+}
+
+if ('Valine' === 'Valine' || false) {
+  document.querySelector('#vcomment') && loadValine()
+  false && document.addEventListener('pjax:complete', () => document.querySelector('#vcomment') && loadValine())
+}
+else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script><div class="app-refresh" id="app-refresh"> <div class="app-refresh-wrap"> <label>✨ 网站已更新最新版本 👉</label> <a href="javascript:void(0)" onclick="location.reload()">点击刷新</a> </div></div><script>function showNotification(){if(GLOBAL_CONFIG.Snackbar){var t="light"===document.documentElement.getAttribute("data-theme")?GLOBAL_CONFIG.Snackbar.bgLight:GLOBAL_CONFIG.Snackbar.bgDark,e=GLOBAL_CONFIG.Snackbar.position;Snackbar.show({text:"已更新最新版本",backgroundColor:t,duration:5e5,pos:e,actionText:"点击刷新",actionTextColor:"#fff",onActionClick:function(t){location.reload()}})}else{var o=`top: 0; background: ${"light"===document.documentElement.getAttribute("data-theme")?"#49b1f5":"#1f1f1f"};`;document.getElementById("app-refresh").style.cssText=o}}"serviceWorker"in navigator&&(navigator.serviceWorker.controller&&navigator.serviceWorker.addEventListener("controllerchange",function(){showNotification()}),window.addEventListener("load",function(){navigator.serviceWorker.register("/sw.js")}));</script><script src="https://cdn.jsdelivr.net/gh/extheor/MaXiaoYu-s-Blog/calendar.js"></script><script src="https://cdn.jsdelivr.net/gh/extheor/MaXiaoYu-s-Blog/languages.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body></html>
